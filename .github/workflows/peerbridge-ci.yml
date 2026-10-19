@@ -1,0 +1,263 @@
+# Kiểm tra code thật của PeerBridge (backend/, frontend/) cho mọi PR và mỗi lần đẩy lên main/develop.
+# ci.yml kiểm tra src/ + tests/ của template; file này kiểm tra backend/ và frontend/.
+# AI luôn ở chế độ giả lập (không có OPENAI_API_KEY), nên CI không tốn tiền và không phụ thuộc mạng ngoài.
+# Organization chặn GitHub-hosted runner vì billing; dùng Linux runner team-5 như các workflow đang chạy.
+# Không chạy mã từ fork PR trên runner dùng chung.
+name: PeerBridge CI
+
+on:
+  push:
+    branches: [main, develop, integration/peerbridge]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: peerbridge-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# setup-python also invokes pip while bootstrapping a downloaded interpreter.
+# Apply these settings before that action, not just during dependency installs.
+env:
+  PIP_DEFAULT_TIMEOUT: "120"
+  PIP_RETRIES: "10"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  runner_space:
+    name: Prepare team-5 runner disk
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: [self-hosted, Linux, X64, team-5]
+    timeout-minutes: 5
+    steps:
+      - name: Reclaim build cache only when disk is low
+        shell: bash
+        run: |
+          df -h "$GITHUB_WORKSPACE"
+          docker system df || true
+          du -sh "$HOME/.cache/pip" "$HOME/.cache/ms-playwright" "$HOME/.npm" "$GITHUB_WORKSPACE" 2>/dev/null || true
+          available_kb=$(df -Pk "$GITHUB_WORKSPACE" | awk 'NR == 2 {print $4}')
+          if (( available_kb < 8388608 )); then
+            python3 -m pip cache purge || true
+            if [[ -d "$HOME/.cache/ms-playwright" ]]; then
+              rm -rf -- "$HOME/.cache/ms-playwright"
+            fi
+            for container in $(docker ps -a --format '{{.Names}}' --filter 'name=peerbridge-playwright-'); do
+              docker rm --force "$container" || true
+            done
+            docker image rm mcr.microsoft.com/playwright:v1.48.2-jammy || true
+            docker image rm peerbridge-api:ci peerbridge-web:ci || true
+            docker builder prune --all --force
+          fi
+          df -h "$GITHUB_WORKSPACE"
+          available_kb=$(df -Pk "$GITHUB_WORKSPACE" | awk 'NR == 2 {print $4}')
+          if (( available_kb < 2097152 )); then
+            echo "Runner still has less than 2 GiB free; the runner owner must clear disk space."
+            exit 1
+          fi
+
+  backend:
+    name: Backend (ruff + pytest + coverage)
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    needs: runner_space
+    runs-on: [self-hosted, Linux, X64, team-5]
+    timeout-minutes: 30
+    env:
+      PIP_NO_CACHE_DIR: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements-deploy.txt "pytest>=8,<9" "pytest-cov>=5,<8" "ruff>=0.8"
+
+      - name: Lint with ruff
+        run: ruff check backend/ eval/
+
+      - name: Run tests with coverage
+        working-directory: backend
+        env:
+          APP_ENV: test
+          OPENAI_API_KEY: ""
+          JWT_SECRET: ci-only-not-a-production-secret
+          PLAN_LLM_PROVIDER: template
+          MATCH_RERANK_ENABLED: "false"
+          LOOP_INTERVAL_MINUTES: "0"
+        run: >
+          python -m pytest -q tests
+          --cov=app --cov-report=term --cov-report=xml:coverage.xml
+          --cov-fail-under=60
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-coverage
+          path: backend/coverage.xml
+          if-no-files-found: ignore
+
+  frontend:
+    name: Frontend (typecheck + build)
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    needs: runner_space
+    runs-on: [self-hosted, Linux, X64, team-5]
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - run: npm ci
+      - name: Typecheck
+        run: npx tsc --noEmit
+      - name: Build
+        env:
+          NEXT_PUBLIC_API_URL: http://localhost:8000
+        run: npm run build
+
+  docker:
+    name: Docker build (backend + frontend)
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    needs: runner_space
+    runs-on: [self-hosted, Linux, X64, team-5]
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build backend image
+        run: docker build -f backend/Dockerfile.render --build-arg APP_REVISION="$GITHUB_SHA" -t peerbridge-api:ci backend
+      - name: Build frontend image
+        run: docker build -f frontend/Dockerfile.render --build-arg APP_REVISION="$GITHUB_SHA" --build-arg NEXT_PUBLIC_API_URL=http://localhost:8000 -t peerbridge-web:ci frontend
+      - name: Release CI images and cache if disk is low
+        if: always()
+        shell: bash
+        run: |
+          docker image rm peerbridge-api:ci peerbridge-web:ci || true
+          available_kb=$(df -Pk "$GITHUB_WORKSPACE" | awk 'NR == 2 {print $4}')
+          if (( available_kb < 8388608 )); then
+            docker builder prune --all --force
+          fi
+          df -h "$GITHUB_WORKSPACE"
+
+  e2e:
+    name: E2E (đăng ký và điều hướng, AI giả lập)
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    needs: runner_space
+    runs-on: [self-hosted, Linux, X64, team-5]
+    timeout-minutes: 25
+    env:
+      PIP_NO_CACHE_DIR: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install backend
+        run: pip install -r backend/requirements-deploy.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: |
+            frontend/package-lock.json
+            frontend/tests/e2e/package-lock.json
+      - name: Install frontend and Playwright
+        env:
+          NPM_CONFIG_FETCH_RETRIES: "5"
+        run: |
+          retry() {
+            for attempt in 1 2 3; do
+              if "$@"; then return 0; fi
+              if [ "$attempt" -eq 3 ]; then return 1; fi
+              echo "Download failed; retrying in 10 seconds ($attempt/3)..."
+              sleep 10
+            done
+          }
+          retry npm ci --prefix frontend
+          retry npm ci --prefix frontend/tests/e2e
+          retry npx --prefix frontend/tests/e2e playwright install chromium
+
+      - name: Provide Chromium system libraries without sudo
+        shell: bash
+        run: |
+          set -euo pipefail
+          library_root="$RUNNER_TEMP/playwright-libs"
+          package_root="$RUNNER_TEMP/playwright-debs"
+          mkdir -p "$library_root" "$package_root"
+          pick_package() {
+            for candidate in "$@"; do
+              if apt-cache show "$candidate" >/dev/null 2>&1; then
+                echo "$candidate"
+                return 0
+              fi
+            done
+            return 1
+          }
+          packages=(
+            "$(pick_package libatk1.0-0t64 libatk1.0-0)"
+            "$(pick_package libatk-bridge2.0-0t64 libatk-bridge2.0-0)"
+            "$(pick_package libcups2t64 libcups2)"
+            libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1
+            libpango-1.0-0 libcairo2
+            "$(pick_package libasound2t64 libasound2)"
+            "$(pick_package libatspi2.0-0t64 libatspi2.0-0)"
+            libavahi-common3 libavahi-client3 libxrender1 libthai0
+            libharfbuzz0b libfontconfig1 libxcb-render0 libxcb-shm0
+            libpixman-1-0 libxi6 libxres1
+            libavahi-common-data libgraphite2-3 libdatrie1 libfreetype6
+            libexpat1 "$(pick_package libpng16-16t64 libpng16-16)" libdbus-1-3
+            fonts-dejavu-core
+          )
+          cd "$package_root"
+          apt-get download "${packages[@]}"
+          for package_file in ./*.deb; do
+            dpkg-deb --extract "$package_file" "$library_root"
+          done
+          library_path="$library_root/usr/lib/x86_64-linux-gnu:$library_root/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+          font_config="$RUNNER_TEMP/playwright-fonts.conf"
+          cat > "$font_config" <<EOF
+          <?xml version="1.0"?>
+          <fontconfig>
+            <dir>$library_root/usr/share/fonts</dir>
+            <cachedir>$RUNNER_TEMP/playwright-font-cache</cachedir>
+          </fontconfig>
+          EOF
+          echo "LD_LIBRARY_PATH=$library_path" >> "$GITHUB_ENV"
+          echo "FONTCONFIG_FILE=$font_config" >> "$GITHUB_ENV"
+          LD_LIBRARY_PATH="$library_path" FONTCONFIG_FILE="$font_config" node -e \
+            "const { chromium } = require('$GITHUB_WORKSPACE/frontend/tests/e2e/node_modules/playwright'); chromium.launch().then(b => b.close()).catch(e => { console.error(e); process.exit(1); });"
+          rm -rf -- "$package_root"
+          df -h "$GITHUB_WORKSPACE"
+          df -h /dev/shm
+          free -h
+
+      - name: Run E2E
+        working-directory: frontend/tests/e2e
+        env:
+          E2E_PYTHON: python
+          DEBUG: pw:browser*
+          SHOTS_DIR: ${{ runner.temp }}/e2e-shots
+        run: mkdir -p "$SHOTS_DIR" && npx playwright test
+
+      - name: Upload screenshots and trace
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-artifacts
+          path: |
+            ${{ runner.temp }}/e2e-shots
+            frontend/tests/e2e/test-results
+          if-no-files-found: ignore

@@ -1,0 +1,27 @@
+{
+  "description": "AI usage logging for AI20K",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd /c scripts\\_pyrun.cmd scripts\\log_hook.py --tool=codex",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd /c scripts\\_pyrun.cmd scripts\\log_hook.py --tool=codex",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

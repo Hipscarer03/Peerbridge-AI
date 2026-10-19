@@ -1,0 +1,196 @@
+{
+  "result": "PASS",
+  "transport": "real HTTP to an isolated FastAPI server",
+  "requests": 34,
+  "checks": [
+    "student login",
+    "profile loading",
+    "matching score",
+    "empty matching",
+    "matching HTTP error",
+    "send invitation",
+    "duplicate rejected",
+    "incoming invitation",
+    "accept MATCHED",
+    "reject REJECTED",
+    "non-recipient accept/reject denied",
+    "fresh login reloads connection",
+    "signed expired token returns 401 and notifies client"
+  ],
+  "unavailable": [
+    "candidate reasons are absent from the backend response",
+    "browser console and mobile visual verification"
+  ],
+  "calls": [
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/register",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/profiles/me",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/profiles/me",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/profiles/me",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/profiles/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/matches/search",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/matches/search",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/matches/2",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/matches/search",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/1/accept",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/1/reject",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/1/accept",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/1/reject",
+      "status": 403
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/1/accept",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/1/accept",
+      "status": 409
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/2/reject",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/connections/2/accept",
+      "status": 409
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 401
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/connections",
+      "status": 401
+    }
+  ]
+}

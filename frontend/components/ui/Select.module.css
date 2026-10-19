@@ -1,0 +1,20 @@
+.trigger{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;width:min(320px,100%);min-width:0;padding:8px 12px;border:1px solid var(--line,#dce4f3);border-radius:12px;background:#fff;color:var(--ink,#1c2944);font:inherit;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 2px 6px #21344d05}
+.trigger:hover{border-color:#a7bdf0}
+.trigger:focus-visible,.trigger[data-state="open"]{outline:none;border-color:#7195ee;box-shadow:0 0 0 3px #3064ec14}
+.trigger:disabled{opacity:.55;cursor:default}
+.value{display:flex;align-items:center;gap:9px;min-width:0}
+.value>span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.selectedText,.optionText{display:grid;gap:2px;min-width:0}
+.value>.selectedText{white-space:normal;overflow:hidden;text-overflow:clip}
+.selectedText small,.optionText small{font-size:11px;font-weight:450;color:#71819b;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chevron{display:flex;flex:none;color:#697a96;transition:transform .15s}
+.trigger[data-state="open"] .chevron{transform:rotate(180deg)}
+.content{z-index:120;min-width:var(--radix-select-trigger-width);max-width:calc(100vw - 24px);max-height:var(--radix-select-content-available-height);overflow:hidden;background:#fff;border:1px solid var(--line,#dce4f3);border-radius:12px;box-shadow:0 12px 35px #1a2f5324;animation:appear .12s ease-out}
+.viewport{padding:5px;max-height:280px}
+.item{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:8px;font-size:13px;line-height:1.5;color:var(--ink,#1c2944);cursor:pointer;outline:none;user-select:none;overflow-wrap:anywhere}
+.item[data-highlighted]{background:#edf3ff;color:#234dc2}
+.item[data-state="checked"]{background:#f1f5ff;font-weight:600}
+.indicator{margin-left:auto;padding-left:12px;color:#3064ec;flex:none}
+.scrollButton{display:flex;justify-content:center;padding:3px;color:#6b7c99}
+@keyframes appear{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.content{animation:none}.chevron{transition:none}}

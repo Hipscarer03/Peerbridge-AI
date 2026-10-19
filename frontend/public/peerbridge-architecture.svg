@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="880" viewBox="0 0 1440 880" role="img" aria-labelledby="title desc">
+  <title id="title">PeerBridge System Architecture</title>
+  <desc id="desc">Student and instructor access a Next.js frontend, which communicates with FastAPI through REST and WebSocket. FastAPI owns business logic and calls a LangGraph moderation agent. PostgreSQL stores system data while Qdrant stores only course material for retrieval.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#15333a" flood-opacity=".09"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f8f4"/><stop offset="1" stop-color="#edf4ef"/></linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#183940"/><stop offset="1" stop-color="#245d58"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#5f8179"/></marker>
+    <style>
+      .sans{font-family:Manrope,Arial,sans-serif}.serif{font-family:Georgia,serif}.label{font:700 15px Manrope,Arial,sans-serif;letter-spacing:1.5px}.title{font:700 24px Georgia,serif;fill:#17343a}.body{font:500 14px Manrope,Arial,sans-serif;fill:#667b77}.small{font:700 12px Manrope,Arial,sans-serif;fill:#4c6d65}.flow{fill:none;stroke:#64827b;stroke-width:2.5;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1440" height="880" rx="32" fill="url(#bg)"/>
+  <circle cx="1320" cy="70" r="190" fill="#dceee4" opacity=".7"/><circle cx="80" cy="810" r="160" fill="#f3e7c8" opacity=".55"/>
+  <text x="64" y="67" class="label" fill="#3d876e">SYSTEM DESIGN · PEERBRIDGE</text>
+  <text x="64" y="112" class="title" font-size="38">Học cùng nhau, có AI hỗ trợ đúng lúc.</text>
+  <text x="64" y="140" class="body">Kiến trúc tách biệt rõ giao diện, nghiệp vụ, AI reasoning và dữ liệu.</text>
+
+  <g filter="url(#shadow)"><rect x="64" y="204" width="212" height="188" rx="22" fill="#fffefa" stroke="#d9e4dd"/></g>
+  <circle cx="126" cy="268" r="31" fill="#dceee6"/><path d="M112 290c4-18 24-18 28 0M126 260a9 9 0 1 0 0-18 9 9 0 0 0 0 18" fill="none" stroke="#2c755f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="214" cy="268" r="31" fill="#e5edf7"/><path d="M200 290c4-18 24-18 28 0M214 260a9 9 0 1 0 0-18 9 9 0 0 0 0 18" fill="none" stroke="#486c87" stroke-width="3" stroke-linecap="round"/>
+  <text x="170" y="330" text-anchor="middle" class="title">Người dùng</text><text x="170" y="355" text-anchor="middle" class="body">Sinh viên · Giảng viên</text>
+
+  <g filter="url(#shadow)"><rect x="354" y="180" width="284" height="236" rx="24" fill="url(#dark)"/></g>
+  <rect x="384" y="215" width="224" height="56" rx="13" fill="#fff" fill-opacity=".12"/><text x="496" y="239" text-anchor="middle" class="label" fill="#aee0cd">PRESENTATION LAYER</text><text x="496" y="258" text-anchor="middle" class="small" fill="#fff">Next.js Frontend</text>
+  <g class="small" fill="#d7e7e2"><text x="386" y="308">Student UI</text><text x="386" y="339">Instructor Dashboard</text><text x="386" y="370">Realtime Study Room</text></g>
+  <g fill="#8ed3b7"><circle cx="590" cy="304" r="4"/><circle cx="590" cy="335" r="4"/><circle cx="590" cy="366" r="4"/></g>
+
+  <path d="M276 298H345" class="flow"/><rect x="285" y="272" width="52" height="20" rx="10" fill="#edf4ef"/><text x="311" y="286" text-anchor="middle" class="small" font-size="9">HTTPS</text>
+
+  <g filter="url(#shadow)"><rect x="730" y="180" width="646" height="360" rx="26" fill="#fffefa" stroke="#d4e2da"/></g>
+  <text x="766" y="218" class="label" fill="#3d876e">APPLICATION LAYER</text><text x="766" y="251" class="title">FastAPI Backend</text><text x="766" y="276" class="body">System of business logic · Authenticated &amp; role-aware</text>
+  <g>
+    <rect x="765" y="307" width="176" height="68" rx="14" fill="#e9f4ee"/><text x="785" y="334" class="small">AUTH / RBAC</text><text x="785" y="354" class="body" font-size="11">STUDENT · INSTRUCTOR</text>
+    <rect x="958" y="307" width="176" height="68" rx="14" fill="#eef3f8"/><text x="978" y="334" class="small">PROFILE</text><text x="978" y="354" class="body" font-size="11">Needs · Offers · Skills</text>
+    <rect x="1151" y="307" width="190" height="68" rx="14" fill="#f7eed5"/><text x="1171" y="334" class="small">MATCHING</text><text x="1171" y="354" class="body" font-size="11">Deterministic score</text>
+    <rect x="765" y="393" width="176" height="68" rx="14" fill="#f0ebf6"/><text x="785" y="420" class="small">CONNECTION</text><text x="785" y="440" class="body" font-size="11">Mutual consent</text>
+    <rect x="958" y="393" width="176" height="68" rx="14" fill="#e9f4ee"/><text x="978" y="420" class="small">STUDY SESSION</text><text x="978" y="440" class="body" font-size="11">Room · Chat · Status</text>
+    <rect x="1151" y="393" width="190" height="68" rx="14" fill="#f8e5e0"/><text x="1171" y="420" class="small">MODERATION</text><text x="1171" y="440" class="body" font-size="11">Logs · HITL escalation</text>
+  </g>
+  <rect x="765" y="485" width="576" height="29" rx="14" fill="#1e4d4f"/><text x="1053" y="505" text-anchor="middle" class="small" fill="#e8f5ef">REST API + WebSocket Gateway</text>
+  <path d="M638 298H720" class="flow"/><text x="679" y="278" text-anchor="middle" class="small">REST</text><text x="679" y="322" text-anchor="middle" class="small">WebSocket</text>
+
+  <g filter="url(#shadow)"><rect x="354" y="616" width="404" height="194" rx="24" fill="#fffefa" stroke="#d4e2da"/></g>
+  <text x="386" y="653" class="label" fill="#3d876e">AI REASONING LAYER</text><text x="386" y="688" class="title">LangGraph Moderator</text>
+  <g class="small"><rect x="386" y="714" width="82" height="36" rx="10" fill="#e9f4ee"/><text x="427" y="737" text-anchor="middle">Classify</text><rect x="479" y="714" width="82" height="36" rx="10" fill="#f7eed5"/><text x="520" y="737" text-anchor="middle">Assess</text><rect x="572" y="714" width="154" height="36" rx="10" fill="#f8e5e0"/><text x="649" y="737" text-anchor="middle">Guard + HITL</text></g>
+  <text x="386" y="781" class="body">ALLOW · GUIDE · WARN · BLOCK · ESCALATE</text>
+  <path d="M1108 540v53H760v66" class="flow"/><text x="920" y="580" class="small">Fixed agent contract</text>
+
+  <g filter="url(#shadow)"><rect x="833" y="616" width="220" height="194" rx="24" fill="#1d4549"/></g><text x="865" y="655" class="label" fill="#aee0cd">SYSTEM DATA</text><text x="865" y="692" class="title" fill="#fff">PostgreSQL</text><text x="865" y="720" class="body" fill="#b9ceca">Business source of truth</text><text x="865" y="752" class="small" fill="#d9e8e3">Users · Profiles · Sessions</text><text x="865" y="776" class="small" fill="#d9e8e3">Messages · Moderation logs</text>
+  <path d="M994 540v65" class="flow"/>
+
+  <g filter="url(#shadow)"><rect x="1120" y="616" width="256" height="194" rx="24" fill="#fffefa" stroke="#d4e2da"/></g><text x="1152" y="655" class="label" fill="#8b6d2b">RETRIEVAL ONLY</text><text x="1152" y="692" class="title">Qdrant + LLM</text><text x="1152" y="720" class="body">Course-material RAG</text><rect x="1152" y="746" width="191" height="35" rx="10" fill="#f5ecd2"/><text x="1248" y="768" text-anchor="middle" class="small">Không lưu business data</text>
+  <path d="M758 708h352" class="flow"/>
+
+  <rect x="64" y="839" width="1312" height="1" fill="#cedbd4"/><text x="64" y="861" class="body" font-size="11">Frontend → FastAPI → LangGraph · PostgreSQL = system of record · Qdrant = course retrieval only</text><text x="1376" y="861" text-anchor="end" class="small">PEERBRIDGE · v1.0</text>
+</svg>

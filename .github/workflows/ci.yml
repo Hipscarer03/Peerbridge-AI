@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+<<<<<<< HEAD
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# Cover setup-python's pip bootstrap as well as the dependency install below.
+env:
+  PIP_DEFAULT_TIMEOUT: "120"
+  PIP_RETRIES: "10"
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  lint-and-test:
+    # Do not execute untrusted fork code on the shared team runner.
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: [self-hosted, Linux, X64, team-5]
+=======
+jobs:
+  lint-and-test:
+    runs-on: [self-hosted, team-5]
+>>>>>>> 29066618049be865e9daa585fed068c149bc780f
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Lint with ruff
+        run: ruff check src/ tests/
+
+      - name: Run tests
+        run: pytest tests/ -v --tb=short
+        env:
+          APP_ENV: test
+          OPENAI_API_KEY: test-key

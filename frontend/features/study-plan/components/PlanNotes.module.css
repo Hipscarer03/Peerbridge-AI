@@ -1,0 +1,20 @@
+.notes{display:grid;gap:14px;min-width:0}
+.context{margin:0;padding:10px 12px;background:#f1f5ff;border-radius:9px;color:#486084;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.label{display:grid;gap:8px;color:var(--ink);font-size:13px;font-weight:600}
+.label textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;resize:vertical;font:inherit;font-weight:400;font-size:14px;line-height:1.6;min-height:140px}
+.label textarea:focus-visible{outline:2px solid #7b9def;outline-offset:1px}
+.sendRow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
+.sendRow small{font-size:11px;color:var(--muted)}
+.sendRow button{font-size:13px;padding:9px 14px}
+.history{border-top:1px solid var(--line);padding-top:14px;display:grid;gap:12px}
+.history h3{margin:0;font-size:13px}
+.note{display:flex;gap:9px;align-items:flex-start;padding-bottom:10px;border-bottom:1px solid #edf0f5}
+.note>div{min-width:0}
+.note strong{font-size:12px}
+.note p{margin:5px 0;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.note small{font-size:11px;color:var(--muted)}
+.error,.success,.empty{margin:0;font-size:12px;line-height:1.5}
+.error{color:#a43c27}.success{color:#267646}.empty{color:var(--muted)}
+.compact{margin-top:0;padding-top:0;border-top:0;gap:10px}
+.compact .label textarea{min-height:86px;font-size:13px;padding:9px;line-height:1.5}
+.compact .history{padding-top:10px;gap:8px}

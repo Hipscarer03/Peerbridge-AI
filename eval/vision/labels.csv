@@ -1,0 +1,11 @@
+file,category,is_study,expected_concepts,note
+<<<<<<< HEAD
+real/sv01_aicb_rag_01.jpg,photo_screen,true,ai.rag_pipeline,
+real/sv02_aicb_react_01.jpg,photo_screen,true,ai.react_agent,
+real/sv03_aicb_guardrails_01.jpg,notebook,true,ai.guardrails,
+=======
+real/minh_sql_join_01.jpg,photo_screen,true,sql.join,
+real/lan_pandas_merge_01.jpg,photo_screen,true,py.pandas_basic;py.basic,
+real/vo_thong_ke_01.jpg,notebook,true,stats.descriptive,
+>>>>>>> 29066618049be865e9daa585fed068c149bc780f
+real/an_trua_01.jpg,not_study,false,,

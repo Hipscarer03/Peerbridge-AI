@@ -1,0 +1,106 @@
+name: Render integration
+
+on:
+  push:
+    branches: [integration/peerbridge]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: render-integration
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/integration/peerbridge'
+    runs-on: [self-hosted, Linux, X64, team-5]
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Linux Docker runner
+        run: docker info --format '{{.OSType}}'
+      - name: Test integration backend
+        working-directory: backend
+        env:
+          APP_ENV: test
+          JWT_SECRET: ci-only-not-a-production-secret
+          DATABASE_PATH: ./data/ci.db
+          UPLOAD_DIRECTORY: ./data/ci-uploads
+          PLAN_LLM_PROVIDER: template
+          MATCH_RERANK_ENABLED: 'false'
+          LOOP_INTERVAL_MINUTES: '0'
+        run: |
+          docker run --rm -v "$PWD:/source:ro" -e APP_ENV -e JWT_SECRET -e DATABASE_PATH -e UPLOAD_DIRECTORY -e PLAN_LLM_PROVIDER -e MATCH_RERANK_ENABLED -e LOOP_INTERVAL_MINUTES python:3.12-slim bash -c '
+            set -e
+            cp -a /source /tmp/backend
+            cd /tmp/backend
+            pip install -r requirements-deploy.txt "pytest>=8,<9"
+            pytest -q tests/test_profiles_api.py tests/test_matches_api.py tests/test_connections_api.py tests/test_sessions_api.py tests/test_study_room_ws.py tests/test_plans_api.py tests/test_checkin_api.py tests/test_home_api.py tests/test_loop.py
+          '
+      - name: Test frontend
+        working-directory: frontend/tests/person1
+        run: |
+          docker run --rm -v "$PWD:/source:ro" node:22-bookworm-slim bash -c 'set -e; cp -a /source /tmp/tests; cd /tmp/tests; npm ci; npm test'
+
+  publish-and-deploy:
+    needs: verify
+    runs-on: [self-hosted, Linux, X64, team-5]
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      packages: write
+    env:
+      API_URL: ${{ vars.RENDER_API_URL }}
+      WEB_URL: ${{ vars.RENDER_WEB_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Isolate registry credentials on shared runner
+        run: echo "DOCKER_CONFIG=$RUNNER_TEMP/render-docker-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT" >> "$GITHUB_ENV"
+      - name: Login to private GitHub Container Registry
+        env:
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: printf '%s' "$GHCR_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+      - name: Build and publish API
+        id: api
+        run: |
+          set -euo pipefail
+          image="ghcr.io/${GITHUB_REPOSITORY,,}-integration-api"
+          docker build --platform linux/amd64 -f backend/Dockerfile.render --build-arg APP_REVISION="$GITHUB_SHA" -t "$image:$GITHUB_SHA" -t "$image:integration" backend
+          docker push "$image:$GITHUB_SHA"
+          docker push "$image:integration"
+          digest=$(docker inspect --format='{{index .RepoDigests 0}}' "$image:$GITHUB_SHA")
+          echo "digest=$digest" >> "$GITHUB_OUTPUT"
+          echo "API image: \`$digest\`" >> "$GITHUB_STEP_SUMMARY"
+      - name: Deploy API and verify revision
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_API_DEPLOY_HOOK }}
+          RENDER_IMAGE_DIGEST: ${{ steps.api.outputs.digest }}
+          RENDER_VERIFY_URL: ${{ vars.RENDER_API_URL && format('{0}/health', vars.RENDER_API_URL) || '' }}
+        run: python scripts/deploy_render_image.py
+      - name: Build and publish web
+        if: env.API_URL != ''
+        id: web
+        run: |
+          set -euo pipefail
+          image="ghcr.io/${GITHUB_REPOSITORY,,}-integration-web"
+          docker build --platform linux/amd64 -f frontend/Dockerfile.render --build-arg APP_REVISION="$GITHUB_SHA" --build-arg NEXT_PUBLIC_API_URL="$API_URL" -t "$image:$GITHUB_SHA" -t "$image:integration" frontend
+          docker push "$image:$GITHUB_SHA"
+          docker push "$image:integration"
+          digest=$(docker inspect --format='{{index .RepoDigests 0}}' "$image:$GITHUB_SHA")
+          echo "digest=$digest" >> "$GITHUB_OUTPUT"
+          echo "Web image: \`$digest\`" >> "$GITHUB_STEP_SUMMARY"
+      - name: Deploy web and verify revision
+        if: env.API_URL != ''
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_WEB_DEPLOY_HOOK }}
+          RENDER_IMAGE_DIGEST: ${{ steps.web.outputs.digest }}
+          RENDER_VERIFY_URL: ${{ vars.RENDER_WEB_URL && format('{0}/deployment.json', vars.RENDER_WEB_URL) || '' }}
+        run: python scripts/deploy_render_image.py
+      - name: Explain bootstrap state
+        if: env.API_URL == ''
+        run: echo 'API image published. Create the Render API image service and set repository variable RENDER_API_URL to enable the web build. No live deployment is claimed yet.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Logout
+        if: always()
+        run: docker logout ghcr.io

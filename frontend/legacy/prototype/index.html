@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#6c5ce7">
+  <title>StudyMate — Tìm đúng bạn, học đúng nhịp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="auth" id="authScreen">
+    <div class="auth-visual">
+      <a class="logo light" href="#"><span class="logo-mark">S</span>StudyMate</a>
+      <div class="auth-copy"><span class="kicker">HỌC CÙNG NHAU, TIẾN XA HƠN</span><h1>Tìm đúng người.<br>Học đúng nhịp.</h1><p>AI giúp bạn tìm bạn học, teammate và phá băng cuộc trò chuyện đầu tiên.</p><div class="proof"><span>✦</span><b>Không cần đăng bài chờ đợi</b><small>Nhận gợi ý phù hợp và biết rõ vì sao hai bạn nên kết nối.</small></div></div>
+      <div class="float-card fc1"><span class="avatar lilac">M</span><div><b>Mai · AI</b><small>92% phù hợp</small></div><span class="spark">✦</span></div>
+      <div class="float-card fc2"><span>💬</span><div><b>AI Ice Breaker</b><small>“Bạn đang học DSA đến đâu rồi?”</small></div></div>
+    </div>
+    <div class="auth-panel">
+      <div class="auth-box"><a class="logo mobile-logo" href="#"><span class="logo-mark">S</span>StudyMate</a><span class="eyebrow">CHÀO MỪNG BẠN</span><h2>Bắt đầu hành trình học cùng nhau</h2><p class="muted">Đăng nhập hoặc tạo tài khoản mới chỉ trong một phút.</p>
+        <div class="tabs"><button class="tab active" data-auth="login">Đăng nhập</button><button class="tab" data-auth="register">Đăng ký</button></div>
+        <form id="loginForm" class="auth-form active"><label>Email</label><input id="loginEmail" type="email" placeholder="ban@email.com" required><label>Mật khẩu</label><input id="loginPassword" type="password" placeholder="••••••••" required><button class="button primary wide">Đăng nhập <span>→</span></button><p class="form-error" id="loginError"></p></form>
+        <form id="registerForm" class="auth-form"><label>Email</label><input id="registerEmail" type="email" placeholder="ban@email.com" required><label>Mật khẩu</label><input id="registerPassword" type="password" minlength="8" placeholder="Tối thiểu 8 ký tự" required><div class="two"><div><label>Tên hiển thị</label><input id="registerName" placeholder="Minh" required></div><div><label>Năm học</label><select id="registerYear"><option>Năm 1</option><option>Năm 2</option><option selected>Năm 3</option><option>Năm 4</option></select></div></div><label>Trường</label><input id="registerUniversity" placeholder="FPT University" required><button class="button primary wide">Tạo tài khoản <span>→</span></button><p class="form-error" id="registerError"></p></form>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell hidden" id="appShell">
+    <aside class="sidebar">
+      <a class="logo"><span class="logo-mark">S</span>StudyMate</a>
+      <nav><button class="nav-item active" data-page="home"><span>⌂</span>Trang chủ</button><button class="nav-item" data-page="discover"><span>⌕</span>Tìm bạn học</button><button class="nav-item" data-page="connections"><span>♡</span>Kết nối <i id="matchBadge">0</i></button><button class="nav-item" data-page="profile"><span>♙</span>Hồ sơ của tôi</button></nav>
+      <div class="ai-card"><span>✦</span><b>Study AI</b><p>Cần giúp tạo profile hay tìm người phù hợp?</p><button data-page="profile">Hoàn thiện hồ sơ →</button></div>
+      <div class="user-card"><span class="avatar" id="sideAvatar">B</span><div><b id="sideName">Bạn</b><small id="sideMeta">Sinh viên</small></div><button id="logoutButton" title="Đăng xuất">↗</button></div>
+    </aside>
+
+    <main>
+      <header><button class="menu" id="menuButton">☰</button><div class="search">⌕ <input placeholder="Tìm kỹ năng, môn học, trường..."></div><div class="header-actions"><span class="status"><i></i> AI sẵn sàng</span><button class="circle">♢</button><span class="avatar" id="topAvatar">B</span></div></header>
+
+      <section class="page active" id="homePage">
+        <div class="welcome"><div><span class="eyebrow">TỔNG QUAN HÔM NAY</span><h1>Chào <span id="welcomeName">bạn</span>! <span class="wave">👋</span></h1><p>Hôm nay là một ngày tuyệt vời để tìm người cùng tiến bộ.</p></div><button class="button primary" data-page="discover">Tìm bạn học <span>→</span></button></div>
+        <div class="hero"><div class="hero-copy"><span class="hero-label">✦ AI MATCHING</span><h2>Một người bạn học phù hợp<br>có thể thay đổi cả hành trình.</h2><p>StudyMate phân tích mục tiêu, kỹ năng và lịch rảnh để tìm người thật sự cùng nhịp với bạn.</p><button class="button white" data-page="discover">Khám phá gợi ý <span>→</span></button></div><div class="orbit"><div class="orbit-ring"></div><span class="orb a">P</span><span class="orb b">JS</span><span class="orb c">AI</span><span class="orb d">Git</span><div class="orbit-core">✦<small>AI Match</small></div></div></div>
+        <div class="stats"><article><span class="stat-icon purple">⌕</span><div><small>GỢI Ý PHÙ HỢP</small><b id="suggestionStat">—</b><p>Hồ sơ dành cho bạn</p></div></article><article><span class="stat-icon coral">♡</span><div><small>ĐÃ KẾT NỐI</small><b id="connectionStat">—</b><p>Bạn học mới</p></div></article><article><span class="stat-icon mint">✓</span><div><small>HỒ SƠ</small><b id="profileStat">—</b><p>Mức độ hoàn thiện</p></div></article></div>
+        <div class="section-title"><div><span class="eyebrow">DÀNH RIÊNG CHO BẠN</span><h2>Gợi ý nổi bật</h2></div><button class="text-link" data-page="discover">Xem tất cả →</button></div><div class="match-grid" id="homeMatches"></div>
+      </section>
+
+      <section class="page" id="discoverPage"><div class="page-head"><div><span class="eyebrow">AI MATCHING</span><h1>Tìm người cùng nhịp</h1><p>Gợi ý được xếp hạng theo mục tiêu, kỹ năng, lịch rảnh và cách học.</p></div><button class="button soft" id="refreshButton">↻ Làm mới gợi ý</button></div><div class="filter-bar"><button class="filter active" data-filter="all">Tất cả</button><button class="filter" data-filter="project">💻 Làm project</button><button class="filter" data-filter="exam">🎓 Ôn thi</button><button class="filter" data-filter="new_skill">📚 Học skill</button><button class="filter" data-filter="competition">🏆 Cuộc thi</button><button class="filter" data-filter="daily">🤝 Học hàng ngày</button></div><div class="match-grid large" id="allMatches"></div></section>
+
+      <section class="page" id="connectionsPage"><div class="page-head"><div><span class="eyebrow">MỐI QUAN HỆ HỌC TẬP</span><h1>Kết nối của bạn</h1><p>Mở bộ phá băng để bắt đầu cuộc trò chuyện dễ dàng hơn.</p></div></div><div class="connection-list" id="connectionList"></div></section>
+
+      <section class="page" id="profilePage"><div class="page-head"><div><span class="eyebrow">HỒ SƠ HỌC TẬP</span><h1>Để AI hiểu bạn hơn</h1><p>Thông tin càng rõ, kết quả ghép càng chính xác.</p></div><button class="button primary" id="saveProfileTop">Lưu hồ sơ</button></div>
+        <form class="profile-layout" id="profileForm"><aside class="profile-summary"><div class="big-avatar" id="profileAvatar">B</div><h3 id="profileCardName">Bạn</h3><p id="profileCardMeta">Sinh viên</p><div class="complete"><span><b>Độ hoàn thiện</b><b id="completePercent">0%</b></span><div><i id="completeBar"></i></div></div><small>Hồ sơ đầy đủ giúp AI giải thích kết quả matching tốt hơn.</small></aside>
+          <div class="form-panel"><div class="step-head"><span>1</span><div><b>Thông tin cơ bản</b><small>Bạn đang học ở đâu?</small></div></div><div class="three"><div><label>Tên hiển thị</label><input id="pName" required></div><div><label>Trường đại học</label><input id="pUniversity" required></div><div><label>Năm học</label><select id="pYear"><option>Năm 1</option><option>Năm 2</option><option>Năm 3</option><option>Năm 4</option><option>Đã tốt nghiệp</option></select></div></div><div class="two"><div><label>Ngành học</label><input id="pMajor" placeholder="CNTT, AI, ATTT..."></div><div><label>Khu vực</label><input id="pLocation" placeholder="Thủ Đức, TP.HCM"></div></div>
+          <hr><div class="step-head"><span>2</span><div><b>Nhu cầu tìm người</b><small>Phần quan trọng nhất để ghép đúng.</small></div></div><label>Loại nhu cầu</label><div class="choice-grid" id="matchTypeChoices"><button type="button" data-value="exam">🎓<b>Ôn thi</b></button><button type="button" data-value="project">💻<b>Làm project</b></button><button type="button" data-value="new_skill">📚<b>Học skill mới</b></button><button type="button" data-value="competition">🏆<b>Hackathon</b></button><button type="button" data-value="daily">🤝<b>Học hàng ngày</b></button></div><label>Mô tả nhu cầu</label><textarea id="pDescription" placeholder="VD: Cần 2 bạn biết Python cùng làm project Machine Learning..."></textarea><div class="three"><div><label>Kỹ năng (cách nhau bằng dấu phẩy)</label><input id="pSkills" placeholder="Python, React, Git"></div><div><label>Mức kỹ năng</label><select id="pLevel"><option value="beginner">Mới bắt đầu</option><option value="basic">Cơ bản</option><option value="intermediate">Trung bình</option><option value="advanced">Nâng cao</option></select></div><div><label>Mức độ gấp</label><select id="pUrgency"><option value="urgent">🔴 Trong tuần</option><option value="soon">🟡 2–3 tuần</option><option value="flexible">🟢 Không gấp</option></select></div></div>
+          <hr><div class="step-head"><span>3</span><div><b>Lịch rảnh & phong cách</b><small>Giúp hai bạn thật sự học được cùng nhau.</small></div></div><label>Khung giờ rảnh</label><div class="schedule" id="scheduleChoices"></div><div class="three"><div><label>Hình thức</label><select id="pMode"><option value="both">Cả online & trực tiếp</option><option value="online">Online</option><option value="offline">Trực tiếp</option></select></div><div><label>Mức cam kết</label><select id="pCommitment"><option value="light">Nhẹ · 1–2h/tuần</option><option value="medium">Vừa · 3–5h/tuần</option><option value="serious">Nghiêm túc · trên 5h</option></select></div><div><label>Liên hệ sau khi match</label><input id="pContact" placeholder="Zalo / Discord / Email"></div></div><label>Tag tính cách (cách nhau bằng dấu phẩy)</label><input id="pPersonality" placeholder="hướng nội, tự giác, deadline driven"><div class="form-footer"><span id="saveHint">Thay đổi sẽ được dùng cho lần matching tiếp theo.</span><button class="button primary" type="submit">Lưu & tìm người phù hợp <span>→</span></button></div></div></form>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal hidden" id="profileModal"><div class="modal-card preview-card"><button class="modal-close" data-close>×</button><div id="previewContent"></div></div></div>
+  <div class="modal hidden" id="successModal"><div class="modal-card success-card"><button class="modal-close" data-close>×</button><div id="successContent"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

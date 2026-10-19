@@ -1,0 +1,2670 @@
+[
+<<<<<<< HEAD
+  {
+    "slug": "lan",
+    "name": "Lan",
+    "age": 20,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "ĐH Ngoại Ngữ",
+    "major": "Ngôn ngữ Anh",
+    "bio": "Thích âm nhạc và phim ảnh. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "conversation",
+    "interests": [
+      "âm nhạc",
+      "phim ảnh",
+      "học ngoại ngữ"
+    ],
+    "subjects": [
+      "IELTS",
+      "Tiếng Anh"
+    ],
+    "learning_goals": [
+      "Lên 7.0 IELTS, hoàn thành 2 bài Writing Task 2 và 3 buổi Speaking mock mỗi tuần trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 1,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      },
+      {
+        "day_of_week": 6,
+        "start_time": "15:00",
+        "end_time": "17:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "IELTS Writing Task 2",
+      "deadline_level": "dai",
+      "duration_days": 56
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "IELTS Writing Task 2",
+        "description": "Sửa outline và coherence cho 1 bài Task 2/tuần, luyện mock Speaking 30 phút.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Lên 7.0 IELTS, hoàn thành 2 bài Writing Task 2 và 3 buổi Speaking mock mỗi tuần trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "IELTS Speaking Part 2",
+        "description": "Đã đạt IELTS 6.5; mạnh về phát âm và luyện Speaking theo chủ đề.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "hieu",
+    "name": "Hiếu",
+    "age": 21,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH Bách Khoa",
+    "major": "Khoa học Máy tính",
+    "bio": "Thích công nghệ và game. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "công nghệ",
+      "game",
+      "lập trình"
+    ],
+    "subjects": [
+      "C++",
+      "Data Structures"
+    ],
+    "learning_goals": [
+      "Hoàn tất 5 bài LeetCode medium về cây/đồ thị và merge đồ án C++ có unit test trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 2,
+        "start_time": "20:00",
+        "end_time": "22:00"
+      },
+      {
+        "day_of_week": 5,
+        "start_time": "20:00",
+        "end_time": "22:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "C++ và cấu trúc dữ liệu",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "C++ và cấu trúc dữ liệu",
+        "description": "Đã dùng Git trong đồ án; có thể pair review pull request và cách viết test.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn tất 5 bài LeetCode medium về cây/đồ thị và merge đồ án C++ có unit test trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Git và review code C++",
+        "description": "Đang học C++ OOP; vướng con trỏ, cây và phân tích độ phức tạp.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "nhung",
+    "name": "Nhung",
+    "age": 22,
+    "city": "Đà Nẵng",
+    "occupation": "Sinh viên năm cuối",
+    "school": "ĐH Kinh tế",
+    "major": "Marketing",
+    "bio": "Thích marketing và data. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "activity",
+    "interests": [
+      "marketing",
+      "data",
+      "cà phê"
+    ],
+    "subjects": [
+      "Data Analysis",
+      "Digital Marketing"
+    ],
+    "learning_goals": [
+      "Hoàn thành chứng chỉ Google Data Analytics, tự viết 10 truy vấn SQL và làm 1 dashboard portfolio trong 10 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "09:00",
+        "end_time": "11:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "SQL và trực quan hóa dữ liệu",
+      "deadline_level": "dai",
+      "duration_days": 70
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "SQL và trực quan hóa dữ liệu",
+        "description": "Đã chạy chiến dịch digital marketing; có thể góp ý GA4, SEO và cách đọc chỉ số.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thành chứng chỉ Google Data Analytics, tự viết 10 truy vấn SQL và làm 1 dashboard portfolio trong 10 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Digital Marketing và GA4",
+        "description": "Biết Excel cơ bản; cần thực hành SQL, làm sạch dữ liệu và kể chuyện bằng biểu đồ.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "kien",
+    "name": "Kiên",
+    "age": 24,
+    "city": "Hà Nội",
+    "occupation": "Người đi làm",
+    "school": "ĐH Kiến trúc",
+    "major": "Thiết kế nội thất",
+    "bio": "Thích kiến trúc và 3D. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "conversation",
+    "interests": [
+      "kiến trúc",
+      "3D",
+      "du lịch"
+    ],
+    "subjects": [
+      "3ds Max",
+      "Tiếng Anh giao tiếp"
+    ],
+    "learning_goals": [
+      "Thực hành 12 tình huống trao đổi với khách hàng quốc tế và hoàn thiện 1 phối cảnh nội thất trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 0,
+        "start_time": "20:00",
+        "end_time": "21:30"
+      },
+      {
+        "day_of_week": 3,
+        "start_time": "20:00",
+        "end_time": "21:30"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Tiếng Anh giao tiếp công việc",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "Tiếng Anh giao tiếp công việc",
+        "description": "Dùng 3ds Max trong công việc; có thể hướng dẫn workflow dựng model và ánh sáng cơ bản.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Thực hành 12 tình huống trao đổi với khách hàng quốc tế và hoàn thiện 1 phối cảnh nội thất trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "3ds Max và dựng phối cảnh",
+        "description": "Đọc tài liệu chuyên ngành được nhưng ngại trình bày phương án bằng tiếng Anh.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "linh_nguyen",
+    "name": "Linh Nguyễn",
+    "age": 19,
+    "city": "Cần Thơ",
+    "occupation": "Sinh viên",
+    "school": "ĐH Cần Thơ",
+    "major": "Luật kinh tế",
+    "bio": "Thích đọc sách và âm nhạc. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "friends",
+    "interests": [
+      "đọc sách",
+      "âm nhạc",
+      "cây cảnh"
+    ],
+    "subjects": [
+      "Luật dân sự",
+      "Pháp luật đại cương"
+    ],
+    "learning_goals": [
+      "Ôn 4 chương luật dân sự, làm 3 đề thử và đạt ít nhất 8/10 trước kỳ thi sau 5 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 1,
+        "start_time": "14:00",
+        "end_time": "16:00"
+      },
+      {
+        "day_of_week": 4,
+        "start_time": "14:00",
+        "end_time": "16:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Pháp luật đại cương",
+      "duration_days": 35,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 1",
+    "needs_help_with": [
+      {
+        "topic": "Pháp luật đại cương",
+        "description": "Có thể cùng lập sơ đồ khái niệm, tóm tắt giáo trình và kiểm tra chéo flashcard.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Ôn 4 chương luật dân sự, làm 3 đề thử và đạt ít nhất 8/10 trước kỳ thi sau 5 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Kỹ năng đọc và tóm tắt văn bản",
+        "description": "Đang học luật kinh tế; khó phân biệt quy phạm và áp dụng điều luật vào tình huống.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "hoang",
+    "name": "Hoàng",
+    "age": 25,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Lập trình viên",
+    "school": "ĐH Khoa học Tự nhiên",
+    "major": "Công nghệ phần mềm",
+    "bio": "Thích lập trình và anime. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "lập trình",
+      "anime",
+      "tiếng Nhật"
+    ],
+    "subjects": [
+      "JLPT N3"
+    ],
+    "learning_goals": [
+      "Hoàn thành 2 đề N3/tuần, ôn 30 từ/ngày và đạt tối thiểu 100/180 điểm trong 12 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "19:00",
+        "end_time": "22:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "JLPT N3 từ vựng và đọc hiểu",
+      "duration_days": 84,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "JLPT N3 từ vựng và đọc hiểu",
+        "description": "Lập trình Python backend; có thể góp ý script tự động hóa và cách debug API.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thành 2 đề N3/tuần, ôn 30 từ/ngày và đạt tối thiểu 100/180 điểm trong 12 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Python scripting",
+        "description": "Đã xong N4; yếu đọc hiểu và nghe hội thoại tốc độ tự nhiên.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "thu_ha",
+    "name": "Thu Hà",
+    "age": 20,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "Học viện Tài chính",
+    "major": "Kế toán",
+    "bio": "Thích làm bánh và yoga. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "làm bánh",
+      "yoga",
+      "tài chính"
+    ],
+    "subjects": [
+      "Nguyên lý kế toán",
+      "Tiếng Anh"
+    ],
+    "learning_goals": [
+      "Làm đúng 4 bộ bài tập định khoản và đạt từ 8/10 ở đề cuối kỳ trong 5 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 5,
+        "start_time": "19:30",
+        "end_time": "21:30"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Nguyên lý kế toán",
+      "duration_days": 35,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 2",
+    "needs_help_with": [
+      {
+        "topic": "Nguyên lý kế toán",
+        "description": "Dùng Excel cho sổ sách; có thể chỉ cách đối chiếu bảng cân đối phát sinh.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Làm đúng 4 bộ bài tập định khoản và đạt từ 8/10 ở đề cuối kỳ trong 5 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Excel và bảng tính kế toán",
+        "description": "Nắm khái niệm tài khoản nhưng hay nhầm bút toán điều chỉnh và kết chuyển.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "duc_minh",
+    "name": "Đức Minh",
+    "age": 21,
+    "city": "Đà Nẵng",
+    "occupation": "Sinh viên",
+    "school": "ĐH Bách Khoa",
+    "major": "Điện tử Viễn thông",
+    "bio": "Thích AI và thể thao. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "activity",
+    "interests": [
+      "AI",
+      "thể thao",
+      "công nghệ"
+    ],
+    "subjects": [
+      "Machine Learning",
+      "Python"
+    ],
+    "learning_goals": [
+      "Huấn luyện mô hình phân loại ảnh có F1-score trên 0.85 và viết README tái lập được trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 2,
+        "start_time": "20:00",
+        "end_time": "23:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Python cho Machine Learning",
+      "deadline_level": "dai",
+      "duration_days": 56
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Python cho Machine Learning",
+        "description": "Nắm xác suất thống kê và đại số tuyến tính; có thể cùng rà công thức và thiết kế thí nghiệm.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Huấn luyện mô hình phân loại ảnh có F1-score trên 0.85 và viết README tái lập được trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Toán xác suất thống kê",
+        "description": "Biết Python cơ bản; cần hỗ trợ chia tập dữ liệu, overfitting và đánh giá mô hình.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "trang",
+    "name": "Trang",
+    "age": 23,
+    "city": "Hà Nội",
+    "occupation": "Freelancer",
+    "school": "ĐH Mỹ thuật Công nghiệp",
+    "major": "Thiết kế đồ họa",
+    "bio": "Thích vẽ và nghệ thuật. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "conversation",
+    "interests": [
+      "vẽ",
+      "nghệ thuật",
+      "game indie"
+    ],
+    "subjects": [
+      "UI/UX Design"
+    ],
+    "learning_goals": [
+      "Hoàn thiện 1 case study portfolio gồm flow, wireframe và prototype được 3 người dùng thử trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 0,
+        "start_time": "22:00",
+        "end_time": "01:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "UI/UX case study",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Đã đi làm tự do",
+    "needs_help_with": [
+      {
+        "topic": "UI/UX case study",
+        "description": "Dùng Figma freelance; có thể review hierarchy, component và prototype tương tác.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thiện 1 case study portfolio gồm flow, wireframe và prototype được 3 người dùng thử trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Figma và prototype",
+        "description": "Có nền tảng thiết kế đồ họa; cần cải thiện nghiên cứu người dùng và lập luận quyết định UI.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "phuc",
+    "name": "Phúc",
+    "age": 22,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên năm cuối",
+    "school": "ĐH Y Dược",
+    "major": "Y đa khoa",
+    "bio": "Thích y học và đọc sách. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "y học",
+      "đọc sách",
+      "chạy bộ"
+    ],
+    "subjects": [
+      "Nội khoa",
+      "Ngoại khoa"
+    ],
+    "learning_goals": [
+      "Ôn 6 nhóm bệnh nội khoa, giải 100 câu lâm sàng và đạt ít nhất 75% trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "08:00",
+        "end_time": "12:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Nội khoa: tiếp cận ca lâm sàng",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 6",
+    "needs_help_with": [
+      {
+        "topic": "Nội khoa: tiếp cận ca lâm sàng",
+        "description": "Có thể chia sẻ cách lập bảng triệu chứng và dùng câu hỏi truy hồi để ôn.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Ôn 6 nhóm bệnh nội khoa, giải 100 câu lâm sàng và đạt ít nhất 75% trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Ghi nhớ chủ động và Anki",
+        "description": "Đã học lý thuyết; cần luyện chẩn đoán phân biệt và nhớ phác đồ theo triệu chứng.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "bich_ngoc",
+    "name": "Bích Ngọc",
+    "age": 20,
+    "city": "Hải Phòng",
+    "occupation": "Sinh viên",
+    "school": "ĐH Hàng Hải",
+    "major": "Logistics",
+    "bio": "Thích du lịch và phim truyền hình. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "friends",
+    "interests": [
+      "du lịch",
+      "phim truyền hình",
+      "ngoại ngữ"
+    ],
+    "subjects": [
+      "Tiếng Trung HSK 3"
+    ],
+    "learning_goals": [
+      "Đạt HSK 3 trong 10 tuần và tự thuyết trình 5 phút bằng tiếng Trung về một tuyến logistics."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 3,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "HSK 3: nghe và nói",
+      "duration_days": 70,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 2",
+    "needs_help_with": [
+      {
+        "topic": "HSK 3: nghe và nói",
+        "description": "Có kinh nghiệm thuyết trình bài tập nhóm; có thể góp ý cấu trúc slide và cách luyện nói.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Đạt HSK 3 trong 10 tuần và tự thuyết trình 5 phút bằng tiếng Trung về một tuyến logistics."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Thuyết trình và thiết kế slide",
+        "description": "Biết từ vựng sơ cấp; nghe thanh điệu và phản xạ nói còn chậm.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "tuan_anh",
+    "name": "Tuấn Anh",
+    "age": 26,
+    "city": "Hà Nội",
+    "occupation": "Kỹ sư",
+    "school": "ĐH Giao thông Vận tải",
+    "major": "Kỹ thuật cơ khí",
+    "bio": "Thích ô tô và kinh tế. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "ô tô",
+      "kinh tế",
+      "thể thao"
+    ],
+    "subjects": [
+      "Quản trị chiến lược",
+      "MBA"
+    ],
+    "learning_goals": [
+      "Hoàn thành 1 case phân tích SWOT/Porter và đọc 2 chương giáo trình MBA mỗi tuần trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 1,
+        "start_time": "20:30",
+        "end_time": "22:30"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Quản trị chiến lược MBA",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Đang học MBA",
+    "needs_help_with": [
+      {
+        "topic": "Quản trị chiến lược MBA",
+        "description": "Dùng Excel và lập kế hoạch dự án; có thể chia sẻ cách biến mục tiêu thành KPI.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thành 1 case phân tích SWOT/Porter và đọc 2 chương giáo trình MBA mỗi tuần trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Excel phân tích kinh doanh",
+        "description": "Có kinh nghiệm kỹ thuật; mới chuyển sang phân tích chiến lược và tài chính doanh nghiệp.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "mai_phuong",
+    "name": "Mai Phương",
+    "age": 19,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH KHXH&NV",
+    "major": "Tâm lý học",
+    "bio": "Thích tâm lý học và phim ảnh. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "conversation",
+    "interests": [
+      "tâm lý học",
+      "phim ảnh",
+      "viết lách"
+    ],
+    "subjects": [
+      "Tâm lý học hành vi"
+    ],
+    "learning_goals": [
+      "Nộp tiểu luận 2.500 từ có câu hỏi nghiên cứu, 8 nguồn học thuật và trích dẫn APA trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 4,
+        "start_time": "14:00",
+        "end_time": "17:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Tâm lý học hành vi và phương pháp nghiên cứu",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Năm 2",
+    "needs_help_with": [
+      {
+        "topic": "Tâm lý học hành vi và phương pháp nghiên cứu",
+        "description": "Có thể góp ý dàn ý, cách diễn giải kết quả và rà trích dẫn APA.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Nộp tiểu luận 2.500 từ có câu hỏi nghiên cứu, 8 nguồn học thuật và trích dẫn APA trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Viết học thuật và trích dẫn APA",
+        "description": "Hiểu khái niệm cơ bản; cần thu hẹp câu hỏi nghiên cứu và tổng hợp tài liệu.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "hai_dang",
+    "name": "Hải Đăng",
+    "age": 21,
+    "city": "Đà Nẵng",
+    "occupation": "Sinh viên",
+    "school": "ĐH Kinh tế",
+    "major": "Quản trị kinh doanh",
+    "bio": "Thích startup và kinh doanh. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "activity",
+    "interests": [
+      "startup",
+      "kinh doanh",
+      "cà phê"
+    ],
+    "subjects": [
+      "Kế toán quản trị",
+      "Tài chính doanh nghiệp"
+    ],
+    "learning_goals": [
+      "Hoàn thiện mô hình tài chính 12 tháng và phỏng vấn 5 khách hàng tiềm năng trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 0,
+        "start_time": "19:00",
+        "end_time": "22:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Tài chính doanh nghiệp cho startup",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Tài chính doanh nghiệp cho startup",
+        "description": "Có thể chia sẻ Business Model Canvas, thiết kế câu hỏi phỏng vấn và kiểm chứng nhu cầu.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thiện mô hình tài chính 12 tháng và phỏng vấn 5 khách hàng tiềm năng trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Lập mô hình kinh doanh",
+        "description": "Có ý tưởng kinh doanh; cần kiểm tra giả định doanh thu, chi phí và điểm hòa vốn.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "quynh_nhu",
+    "name": "Quỳnh Như",
+    "age": 24,
+    "city": "Cần Thơ",
+    "occupation": "Giáo viên",
+    "school": "ĐH Sư phạm",
+    "major": "Sư phạm Toán",
+    "bio": "Thích giảng dạy và toán học. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "giảng dạy",
+      "toán học",
+      "du lịch"
+    ],
+    "subjects": [
+      "Tiếng Anh giao tiếp",
+      "IELTS"
+    ],
+    "learning_goals": [
+      "Đạt IELTS Speaking 6.5 qua 4 buổi mock và soạn 2 hoạt động dạy học tích cực trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 5,
+        "start_time": "20:00",
+        "end_time": "21:30"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "IELTS Speaking Part 3",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "IELTS Speaking Part 3",
+        "description": "Có kinh nghiệm sư phạm Toán; có thể góp ý cách chia mục tiêu bài học và kiểm tra hiểu bài.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Đạt IELTS Speaking 6.5 qua 4 buổi mock và soạn 2 hoạt động dạy học tích cực trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Thiết kế hoạt động dạy Toán",
+        "description": "Đọc hiểu tốt; cần phát triển câu trả lời có lập luận và ví dụ tự nhiên.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "minh_tri",
+    "name": "Minh Trí",
+    "age": 20,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "ĐH Công nghệ",
+    "major": "Kỹ thuật máy tính",
+    "bio": "Thích hardware và game. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "friends",
+    "interests": [
+      "hardware",
+      "game",
+      "công nghệ"
+    ],
+    "subjects": [
+      "Lập trình C",
+      "Vi xử lý"
+    ],
+    "learning_goals": [
+      "Hoàn thành 4 bài lab vi xử lý, giải thích được luồng ngắt và đạt 8/10 bài kiểm tra trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 2,
+        "start_time": "23:00",
+        "end_time": "02:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Vi xử lý và lập trình C",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Vi xử lý và lập trình C",
+        "description": "Có thể hướng dẫn Git, Linux CLI và cách khoanh vùng lỗi bằng GDB.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thành 4 bài lab vi xử lý, giải thích được luồng ngắt và đạt 8/10 bài kiểm tra trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Linux và debug bằng GDB",
+        "description": "Biết C cơ bản; vướng thanh ghi, ngắt và đọc datasheet.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "bao_tram",
+    "name": "Bảo Trâm",
+    "age": 22,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên năm cuối",
+    "school": "ĐH Hoa Sen",
+    "major": "Quản trị Du lịch",
+    "bio": "Thích du lịch và văn hóa. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "conversation",
+    "interests": [
+      "du lịch",
+      "văn hóa",
+      "ngoại ngữ"
+    ],
+    "subjects": [
+      "Tiếng Tây Ban Nha"
+    ],
+    "learning_goals": [
+      "Tự giới thiệu, hỏi đường và xử lý 10 tình huống du lịch bằng tiếng Tây Ban Nha sau 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "15:00",
+        "end_time": "17:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Tiếng Tây Ban Nha giao tiếp du lịch",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "Tiếng Tây Ban Nha giao tiếp du lịch",
+        "description": "Học quản trị du lịch; có thể luyện hội thoại đặt phòng, lịch trình và xử lý yêu cầu khách.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Tự giới thiệu, hỏi đường và xử lý 10 tình huống du lịch bằng tiếng Tây Ban Nha sau 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Tiếng Anh giao tiếp ngành du lịch",
+        "description": "Mới học A1; cần luyện nghe và phản xạ câu ngắn trong tình huống thực tế.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "quang_huy",
+    "name": "Quang Huy",
+    "age": 25,
+    "city": "Đà Nẵng",
+    "occupation": "Chuyên viên Marketing",
+    "school": "ĐH Kinh tế",
+    "major": "Thương mại điện tử",
+    "bio": "Thích marketing và SEO. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "marketing",
+      "SEO",
+      "chạy bộ"
+    ],
+    "subjects": [
+      "SEO",
+      "Content Writing"
+    ],
+    "learning_goals": [
+      "Tăng organic clicks 20% cho 5 bài thử nghiệm và trình bày báo cáo SEO sau 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 1,
+        "start_time": "09:00",
+        "end_time": "11:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "SEO và phân tích từ khóa",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "SEO và phân tích từ khóa",
+        "description": "Có thể góp ý GA4, phân tích funnel và cách đọc hiệu quả chiến dịch.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Tăng organic clicks 20% cho 5 bài thử nghiệm và trình bày báo cáo SEO sau 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "GA4 và dashboard marketing",
+        "description": "Biết content cơ bản; cần xây topic cluster, kiểm tra Search Console và đo chuyển đổi.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "thuy_tien",
+    "name": "Thủy Tiên",
+    "age": 21,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "Học viện Báo chí",
+    "major": "Truyền thông đa phương tiện",
+    "bio": "Thích quay phim và nhiếp ảnh. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "activity",
+    "interests": [
+      "quay phim",
+      "nhiếp ảnh",
+      "mạng xã hội"
+    ],
+    "subjects": [
+      "Adobe Premiere",
+      "After Effects"
+    ],
+    "learning_goals": [
+      "Xuất bản vlog 3–5 phút có phụ đề, âm thanh cân bằng và 2 vòng nhận góp ý trong 5 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 3,
+        "start_time": "20:00",
+        "end_time": "22:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Adobe Premiere: dựng video ngắn",
+      "duration_days": 35,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Adobe Premiere: dựng video ngắn",
+        "description": "Có thể góp ý storyboard, hook mở đầu và cấu trúc nội dung cho mạng xã hội.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Xuất bản vlog 3–5 phút có phụ đề, âm thanh cân bằng và 2 vòng nhận góp ý trong 5 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Kịch bản và kể chuyện video",
+        "description": "Biết cắt ghép cơ bản; cần cải thiện nhịp dựng, âm thanh và màu sắc.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "viet_hoang",
+    "name": "Việt Hoàng",
+    "age": 23,
+    "city": "Hải Phòng",
+    "occupation": "Nhân viên văn phòng",
+    "school": "ĐH Hàng Hải",
+    "major": "Kinh tế biển",
+    "bio": "Thích data và thể thao. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "data",
+      "thể thao",
+      "phân tích"
+    ],
+    "subjects": [
+      "PowerBI",
+      "Excel"
+    ],
+    "learning_goals": [
+      "Tự động hóa báo cáo tháng từ 3 nguồn dữ liệu và tạo dashboard Power BI có 5 chỉ số trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 2,
+        "start_time": "19:30",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Power BI và mô hình dữ liệu",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "Power BI và mô hình dữ liệu",
+        "description": "Có thể chia sẻ Excel nâng cao, Power Query và cách chuẩn hóa báo cáo vận hành.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Tự động hóa báo cáo tháng từ 3 nguồn dữ liệu và tạo dashboard Power BI có 5 chỉ số trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Excel nâng cao và Power Query",
+        "description": "Dùng Excel hằng ngày; mới làm quen quan hệ bảng và DAX.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "ngoc_mai",
+    "name": "Ngọc Mai",
+    "age": 20,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH Kiến trúc",
+    "major": "Thiết kế thời trang",
+    "bio": "Thích thời trang và nghệ thuật. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "friends",
+    "interests": [
+      "thời trang",
+      "nghệ thuật",
+      "âm nhạc"
+    ],
+    "subjects": [
+      "Ký họa",
+      "Lịch sử thời trang"
+    ],
+    "learning_goals": [
+      "Hoàn thành 12 bản ký họa và 6 look hoàn chỉnh cho đồ án bộ sưu tập trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "14:00",
+        "end_time": "18:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Ký họa dáng người và phát triển bộ sưu tập",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Ký họa dáng người và phát triển bộ sưu tập",
+        "description": "Có thể góp ý bố cục, màu sắc và cách dựng portfolio thị giác.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thành 12 bản ký họa và 6 look hoàn chỉnh cho đồ án bộ sưu tập trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Illustrator và trình bày portfolio",
+        "description": "Vẽ được phác thảo; cần luyện tỷ lệ cơ thể, chất liệu vải và trình bày concept.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "dinh_khoi",
+    "name": "Đình Khôi",
+    "age": 22,
+    "city": "Cần Thơ",
+    "occupation": "Sinh viên",
+    "school": "ĐH Y Dược Cần Thơ",
+    "major": "Dược học",
+    "bio": "Thích hóa học và đọc sách. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "hóa học",
+      "đọc sách",
+      "cầu lông"
+    ],
+    "subjects": [
+      "Dược lý học",
+      "TOEIC"
+    ],
+    "learning_goals": [
+      "Ôn 5 nhóm thuốc, làm 2 đề TOEIC/tuần và đạt 800 điểm trong 10 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 0,
+        "start_time": "20:00",
+        "end_time": "22:30"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Dược lý học và cơ chế tác dụng thuốc",
+      "duration_days": 70,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "Dược lý học và cơ chế tác dụng thuốc",
+        "description": "Có thể cùng tạo bảng so sánh thuốc và bộ câu hỏi truy hồi theo chương.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Ôn 5 nhóm thuốc, làm 2 đề TOEIC/tuần và đạt 800 điểm trong 10 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "TOEIC Listening và Reading",
+        "description": "Cần hệ thống hóa nhóm thuốc, chỉ định và tác dụng phụ; TOEIC hiện khoảng 650.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "ha_phuong",
+    "name": "Hà Phương",
+    "age": 19,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "ĐH Thương mại",
+    "major": "Kế toán",
+    "bio": "Thích sách truyện và nghe podcast. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "activity",
+    "interests": [
+      "sách truyện",
+      "nghe podcast",
+      "làm bánh"
+    ],
+    "subjects": [
+      "Toán cao cấp",
+      "Tiếng Anh"
+    ],
+    "learning_goals": [
+      "Giải 40 bài tích phân/chuỗi, ghi lại lỗi sai và đạt từ 7.5/10 ở đề thử sau 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 4,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Toán cao cấp: tích phân và chuỗi",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Năm 1",
+    "needs_help_with": [
+      {
+        "topic": "Toán cao cấp: tích phân và chuỗi",
+        "description": "Có thể hướng dẫn làm flashcard công thức và chia bài tập theo dạng, độ khó.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Giải 40 bài tích phân/chuỗi, ghi lại lỗi sai và đạt từ 7.5/10 ở đề thử sau 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Lập kế hoạch ôn thi và flashcard",
+        "description": "Nắm công thức nhưng khó chọn phương pháp khi gặp bài tổng hợp.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "quoc_bao",
+    "name": "Quốc Bảo",
+    "age": 24,
+    "city": "Đà Nẵng",
+    "occupation": "Designer",
+    "school": "ĐH Duy Tân",
+    "major": "Thiết kế đồ họa",
+    "bio": "Thích vẽ và anime. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "conversation",
+    "interests": [
+      "vẽ",
+      "anime",
+      "concept art"
+    ],
+    "subjects": [
+      "Anatomy Drawing"
+    ],
+    "learning_goals": [
+      "Hoàn thành 20 nghiên cứu dáng người và 5 bản vẽ anatomy có cấu trúc trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 5,
+        "start_time": "21:00",
+        "end_time": "23:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Anatomy drawing: khối và tỷ lệ",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "Anatomy drawing: khối và tỷ lệ",
+        "description": "Có thể góp ý dựng khối, phối cảnh một/ba điểm tụ và ánh sáng cơ bản.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thành 20 nghiên cứu dáng người và 5 bản vẽ anatomy có cấu trúc trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Phối cảnh và dựng hình 3D",
+        "description": "Vẽ gesture ổn; cần cải thiện khối cơ, tỷ lệ và foreshortening.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "gia_han",
+    "name": "Gia Hân",
+    "age": 21,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH Sư phạm Kỹ thuật",
+    "major": "Thiết kế nội thất",
+    "bio": "Thích 3D rendering và nội thất. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "friends",
+    "interests": [
+      "3D rendering",
+      "nội thất",
+      "cà phê"
+    ],
+    "subjects": [
+      "Đồ án nội thất"
+    ],
+    "learning_goals": [
+      "Hoàn thiện 3 góc render phòng khách, có moodboard vật liệu và nộp trước review đồ án trong 4 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "09:00",
+        "end_time": "12:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Đồ án nội thất: dựng phối cảnh",
+      "duration_days": 28,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Đồ án nội thất: dựng phối cảnh",
+        "description": "Có thể chia sẻ workflow SketchUp, quản lý layer và chuẩn bị file bàn giao.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thiện 3 góc render phòng khách, có moodboard vật liệu và nộp trước review đồ án trong 4 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "SketchUp và diễn họa vật liệu",
+        "description": "Dựng được model cơ bản; render chậm và chưa kiểm soát ánh sáng/vật liệu.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "minh_quan",
+    "name": "Minh Quân",
+    "age": 23,
+    "city": "Hà Nội",
+    "occupation": "Thực tập sinh",
+    "school": "HV Công nghệ Bưu chính Viễn thông",
+    "major": "An toàn thông tin",
+    "bio": "Thích bảo mật và CTF. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "bảo mật",
+      "CTF",
+      "game"
+    ],
+    "subjects": [
+      "Network Security",
+      "CEH"
+    ],
+    "learning_goals": [
+      "Giải 8 bài CTF mức dễ/trung bình, ghi write-up tái lập được và hoàn thành lộ trình CEH trong 12 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 0,
+        "start_time": "23:00",
+        "end_time": "01:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Network Security và CTF web",
+      "duration_days": 84,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "Network Security và CTF web",
+        "description": "Dùng Linux và Git; có thể review write-up, lệnh shell và quy trình lab an toàn.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Giải 8 bài CTF mức dễ/trung bình, ghi write-up tái lập được và hoàn thành lộ trình CEH trong 12 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Linux và viết báo cáo kỹ thuật",
+        "description": "Biết mạng cơ bản; cần luyện enumerate dịch vụ, phân tích request và ghi lại bước khai thác.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "tuyet_nhi",
+    "name": "Tuyết Nhi",
+    "age": 20,
+    "city": "Đà Lạt",
+    "occupation": "Sinh viên",
+    "school": "ĐH Đà Lạt",
+    "major": "Sinh học",
+    "bio": "Thích thiên nhiên và nghiên cứu. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "activity",
+    "interests": [
+      "thiên nhiên",
+      "nghiên cứu",
+      "nghe nhạc acoustc"
+    ],
+    "subjects": [
+      "Vi sinh vật học",
+      "Tiếng Anh"
+    ],
+    "learning_goals": [
+      "Đọc và tóm tắt 6 paper về vi sinh vật, trình bày một journal club 10 phút trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 3,
+        "start_time": "15:00",
+        "end_time": "17:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Đọc paper sinh học bằng tiếng Anh",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 2",
+    "needs_help_with": [
+      {
+        "topic": "Đọc paper sinh học bằng tiếng Anh",
+        "description": "Có thể cùng lập glossary chuyên ngành và diễn giải từng hình trong paper.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Đọc và tóm tắt 6 paper về vi sinh vật, trình bày một journal club 10 phút trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Thống kê sinh học cơ bản",
+        "description": "Nắm sinh học đại cương; cần đọc abstract/method và hiểu biểu đồ thống kê.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "van_long",
+    "name": "Văn Long",
+    "age": 27,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Kinh doanh tự do",
+    "school": "ĐH Mở",
+    "major": "Quản trị kinh doanh",
+    "bio": "Thích kinh doanh và đầu tư. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "conversation",
+    "interests": [
+      "kinh doanh",
+      "đầu tư",
+      "ngôn ngữ"
+    ],
+    "subjects": [
+      "Tiếng Trung giao tiếp"
+    ],
+    "learning_goals": [
+      "Thực hiện được 10 hội thoại chào hỏi/đàm phán cơ bản và ôn 20 từ mỗi ngày trong 10 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 1,
+        "start_time": "06:00",
+        "end_time": "07:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Tiếng Trung giao tiếp cho công việc",
+      "duration_days": 70,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "Tiếng Trung giao tiếp cho công việc",
+        "description": "Có thể chia sẻ Excel theo dõi đơn hàng và cách lập checklist công việc tuần.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Thực hiện được 10 hội thoại chào hỏi/đàm phán cơ bản và ôn 20 từ mỗi ngày trong 10 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Excel quản lý bán hàng",
+        "description": "Mới học phát âm và pinyin; cần sửa thanh điệu, phản xạ câu và từ vựng thương mại.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "ngoc_han",
+    "name": "Ngọc Hân",
+    "age": 22,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên năm cuối",
+    "school": "Học viện Ngân hàng",
+    "major": "Tài chính ngân hàng",
+    "bio": "Thích tài chính và cà phê. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "tài chính",
+      "cà phê",
+      "yoga"
+    ],
+    "subjects": [
+      "CFA Level 1"
+    ],
+    "learning_goals": [
+      "Hoàn thành 300 câu Financial Reporting, duy trì 70% ở hai mock exam trước kỳ thi sau 14 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "19:00",
+        "end_time": "22:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "CFA Level I: Financial Reporting",
+      "duration_days": 98,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "CFA Level I: Financial Reporting",
+        "description": "Có thể cùng xây lịch ôn theo trọng số môn và dùng Excel theo dõi lỗi câu hỏi.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Hoàn thành 300 câu Financial Reporting, duy trì 70% ở hai mock exam trước kỳ thi sau 14 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Excel và xác suất thống kê",
+        "description": "Đã học kế toán cơ bản; cần luyện câu hỏi CFA và phân biệt chuẩn mực IFRS/US GAAP.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "quang_vinh",
+    "name": "Quang Vinh",
+    "age": 21,
+    "city": "Hải Phòng",
+    "occupation": "Sinh viên",
+    "school": "ĐH Hàng Hải",
+    "major": "Kỹ thuật tàu biển",
+    "bio": "Thích kỹ thuật và thể thao. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "friends",
+    "interests": [
+      "kỹ thuật",
+      "thể thao",
+      "đọc sách"
+    ],
+    "subjects": [
+      "Cơ học lý thuyết",
+      "Toán kỹ thuật"
+    ],
+    "learning_goals": [
+      "Giải đúng 30 bài cơ học, trình bày đủ sơ đồ lực và đạt ít nhất 7.5/10 trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 2,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": false,
+    "matching_goal": {
+      "topic": "Cơ học lý thuyết và bài toán động lực học",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Cơ học lý thuyết và bài toán động lực học",
+        "description": "Có thể cùng rà giải tích vector, đơn vị và cách kiểm tra kết quả bằng thứ nguyên.",
+        "current_level": "Đang tự học, cần người cùng rà bài và chỉ ra bước tiếp theo.",
+        "target_outcome": "Giải đúng 30 bài cơ học, trình bày đủ sơ đồ lực và đạt ít nhất 7.5/10 trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Toán kỹ thuật và vẽ sơ đồ lực",
+        "description": "Nắm công thức nhưng hay sai bước chọn hệ quy chiếu và lập phương trình chuyển động.",
+        "proficiency_level": "Đã có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "mai",
+    "email": "seed-mai@dongdieu.local",
+    "name": "Mai",
+    "age": 20,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "ĐH Mỹ thuật Công nghiệp",
+    "major": "Thiết kế đồ họa",
+    "bio": "Thích thiết kế đồ họa. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "thiết kế đồ họa",
+      "học tập"
+    ],
+    "subjects": [
+      "UI/UX case study",
+      "Thiết kế và thuyết trình portfolio"
+    ],
+    "learning_goals": [
+      "Hoàn thiện 1 case study UI có flow, prototype và 3 lượt usability test trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 0,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "UI/UX case study",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "UI/UX case study",
+        "description": "Có nền tảng thiết kế; cần luyện phỏng vấn người dùng và giải thích quyết định giao diện.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Hoàn thiện 1 case study UI có flow, prototype và 3 lượt usability test trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Thiết kế và thuyết trình portfolio",
+        "description": "Đã dùng Figma cho bài tập; có thể review hierarchy, wireframe và component.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "quan",
+    "email": "seed-quan@dongdieu.local",
+    "name": "Quân",
+    "age": 21,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH Bách Khoa",
+    "major": "Khoa học Máy tính",
+    "bio": "Thích khoa học máy tính. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "khoa học máy tính",
+      "học tập"
+    ],
+    "subjects": [
+      "Python và cấu trúc dữ liệu",
+      "SQL cơ bản và truy vấn JOIN"
+    ],
+    "learning_goals": [
+      "Hoàn thành 20 bài Python về list, dict và cây; viết 5 truy vấn JOIN trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 1,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Python và cấu trúc dữ liệu",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Python và cấu trúc dữ liệu",
+        "description": "Biết lập trình cơ bản; cần luyện phân rã bài toán và phân tích độ phức tạp.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Hoàn thành 20 bài Python về list, dict và cây; viết 5 truy vấn JOIN trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "SQL cơ bản và truy vấn JOIN",
+        "description": "Dùng Python làm bài tập và script; có thể cùng debug vòng lặp, dict và test nhỏ.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "an",
+    "email": "seed-an@dongdieu.local",
+    "name": "An",
+    "age": 19,
+    "city": "Cần Thơ",
+    "occupation": "Sinh viên",
+    "school": "ĐH Cần Thơ",
+    "major": "Ngôn ngữ Anh",
+    "bio": "Thích ngôn ngữ anh. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "ngôn ngữ anh",
+      "học tập"
+    ],
+    "subjects": [
+      "IELTS Speaking",
+      "Viết học thuật tiếng Anh"
+    ],
+    "learning_goals": [
+      "Luyện 12 cue cards, thu âm 3 câu trả lời mỗi tuần và đạt Speaking 6.5 sau 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 2,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "IELTS Speaking",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Năm 2",
+    "needs_help_with": [
+      {
+        "topic": "IELTS Speaking",
+        "description": "Đọc hiểu ổn; cần phát triển câu trả lời dài có ví dụ và liên kết ý.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Luyện 12 cue cards, thu âm 3 câu trả lời mỗi tuần và đạt Speaking 6.5 sau 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Viết học thuật tiếng Anh",
+        "description": "Phát âm và phản xạ giao tiếp khá; có thể luyện mock Speaking theo chủ đề.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "linh",
+    "email": "seed-linh@dongdieu.local",
+    "name": "Linh",
+    "age": 20,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "Học viện Tài chính",
+    "major": "Kế toán",
+    "bio": "Thích kế toán. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "kế toán",
+      "học tập"
+    ],
+    "subjects": [
+      "Nguyên lý kế toán",
+      "Excel và bảng tính"
+    ],
+    "learning_goals": [
+      "Làm 4 bộ bài tập định khoản, tự đối chiếu sổ và đạt tối thiểu 8/10 sau 5 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 3,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Nguyên lý kế toán",
+      "duration_days": 35,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 2",
+    "needs_help_with": [
+      {
+        "topic": "Nguyên lý kế toán",
+        "description": "Nắm thuật ngữ kế toán; hay nhầm bút toán điều chỉnh và kết chuyển.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Làm 4 bộ bài tập định khoản, tự đối chiếu sổ và đạt tối thiểu 8/10 sau 5 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Excel và bảng tính",
+        "description": "Đã dùng Excel cho bài tập; có thể hướng dẫn hàm tra cứu và kiểm tra dữ liệu.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "minh",
+    "email": "seed-minh@dongdieu.local",
+    "name": "Minh",
+    "age": 22,
+    "city": "Đà Nẵng",
+    "occupation": "Sinh viên",
+    "school": "ĐH Bách Khoa",
+    "major": "Điện tử Viễn thông",
+    "bio": "Thích điện tử viễn thông. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "điện tử viễn thông",
+      "học tập"
+    ],
+    "subjects": [
+      "Machine Learning với Python",
+      "Xác suất thống kê"
+    ],
+    "learning_goals": [
+      "Huấn luyện mô hình phân loại có F1 trên 0.80 và viết README tái lập trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 4,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Machine Learning với Python",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "Machine Learning với Python",
+        "description": "Biết Python cơ bản; cần hỗ trợ chuẩn bị dữ liệu và đánh giá mô hình.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Huấn luyện mô hình phân loại có F1 trên 0.80 và viết README tái lập trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Xác suất thống kê",
+        "description": "Nắm xác suất và đại số tuyến tính; có thể giúp kiểm tra giả định, metric và overfitting.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "thao",
+    "email": "seed-thao@dongdieu.local",
+    "name": "Thảo",
+    "age": 21,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH KHXH&NV",
+    "major": "Tâm lý học",
+    "bio": "Thích tâm lý học. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "tâm lý học",
+      "học tập"
+    ],
+    "subjects": [
+      "Phương pháp nghiên cứu tâm lý",
+      "Thống kê cơ bản và Excel"
+    ],
+    "learning_goals": [
+      "Hoàn thiện đề cương nghiên cứu có câu hỏi, thang đo và tổng quan 8 nguồn trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 5,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Phương pháp nghiên cứu tâm lý",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "Phương pháp nghiên cứu tâm lý",
+        "description": "Cần làm rõ biến nghiên cứu, cách chọn mẫu và đọc kết quả thống kê.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Hoàn thiện đề cương nghiên cứu có câu hỏi, thang đo và tổng quan 8 nguồn trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Thống kê cơ bản và Excel",
+        "description": "Có thể góp ý cách tìm nguồn học thuật và cấu trúc tổng quan tài liệu.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "khanh",
+    "email": "seed-khanh@dongdieu.local",
+    "name": "Khánh",
+    "age": 23,
+    "city": "Hà Nội",
+    "occupation": "Thực tập sinh",
+    "school": "ĐH Công nghệ",
+    "major": "An toàn thông tin",
+    "bio": "Thích an toàn thông tin. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "an toàn thông tin",
+      "học tập"
+    ],
+    "subjects": [
+      "Linux và Network Security",
+      "Viết báo cáo kỹ thuật"
+    ],
+    "learning_goals": [
+      "Giải 6 bài CTF web mức dễ/trung bình và viết write-up có thể tái lập trong 8 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 6,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Linux và Network Security",
+      "duration_days": 56,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "Linux và Network Security",
+        "description": "Nắm mạng căn bản; cần luyện enumerate dịch vụ và phân tích request.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Giải 6 bài CTF web mức dễ/trung bình và viết write-up có thể tái lập trong 8 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Viết báo cáo kỹ thuật",
+        "description": "Dùng Linux CLI và Git; có thể góp ý quy trình lab và trình bày báo cáo kỹ thuật.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "vy",
+    "email": "seed-vy@dongdieu.local",
+    "name": "Vy",
+    "age": 20,
+    "city": "Hải Phòng",
+    "occupation": "Sinh viên",
+    "school": "ĐH Hàng Hải",
+    "major": "Logistics",
+    "bio": "Thích logistics. Hợp với nhịp học theo từng đợt, luân phiên nghe và giải thích trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "logistics",
+      "học tập"
+    ],
+    "subjects": [
+      "Tiếng Trung HSK 3",
+      "Thuyết trình và thiết kế slide"
+    ],
+    "learning_goals": [
+      "Ôn 500 từ HSK 3, luyện 10 hội thoại logistics và đạt HSK 3 sau 10 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 0,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Tiếng Trung HSK 3",
+      "duration_days": 70,
+      "deadline_level": "dai"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Cân bằng",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Linh hoạt",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Tùy tình huống"
+    },
+    "study_year": "Năm 2",
+    "needs_help_with": [
+      {
+        "topic": "Tiếng Trung HSK 3",
+        "description": "Mới học tiếng Trung; cần luyện nghe thanh điệu và phản xạ hội thoại.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Ôn 500 từ HSK 3, luyện 10 hội thoại logistics và đạt HSK 3 sau 10 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Thuyết trình và thiết kế slide",
+        "description": "Có thể góp ý cấu trúc thuyết trình, bố cục slide và cách nói trước nhóm.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "duc",
+    "email": "seed-duc@dongdieu.local",
+    "name": "Đức",
+    "age": 22,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH Khoa học Tự nhiên",
+    "major": "Công nghệ thông tin",
+    "bio": "Thích công nghệ thông tin. Hợp với nhịp học theo từng đợt, giải thích lại để nhớ lâu trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "công nghệ thông tin",
+      "học tập"
+    ],
+    "subjects": [
+      "SQL và thiết kế cơ sở dữ liệu",
+      "Python backend"
+    ],
+    "learning_goals": [
+      "Viết 15 truy vấn SELECT/JOIN/GROUP BY và hoàn thành schema cho ứng dụng nhỏ trong 5 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 1,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "SQL và thiết kế cơ sở dữ liệu",
+      "duration_days": 35,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [
+      {
+        "topic": "SQL và thiết kế cơ sở dữ liệu",
+        "description": "Biết SQL căn bản; cần luyện join nhiều bảng, aggregate và khóa ngoại.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Viết 15 truy vấn SELECT/JOIN/GROUP BY và hoàn thành schema cho ứng dụng nhỏ trong 5 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Python backend",
+        "description": "Có thể hướng dẫn Python API cơ bản, debug lỗi và dùng Git khi làm nhóm.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "ngoc",
+    "email": "seed-ngoc@dongdieu.local",
+    "name": "Ngọc",
+    "age": 24,
+    "city": "Đà Nẵng",
+    "occupation": "Nhân viên văn phòng",
+    "school": "ĐH Kinh tế",
+    "major": "Marketing",
+    "bio": "Thích marketing. Hợp với nhịp học theo từng đợt, nghe trước rồi ghi chú trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "marketing",
+      "học tập"
+    ],
+    "subjects": [
+      "Digital Marketing và GA4",
+      "Excel và trực quan hóa dữ liệu"
+    ],
+    "learning_goals": [
+      "Lập dashboard theo dõi 5 KPI chiến dịch và trình bày 3 insight có hành động trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 2,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "Digital Marketing và GA4",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học dồn theo đợt",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "Digital Marketing và GA4",
+        "description": "Biết Excel cơ bản; cần làm sạch dữ liệu và chọn biểu đồ phù hợp.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Lập dashboard theo dõi 5 KPI chiến dịch và trình bày 3 insight có hành động trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Excel và trực quan hóa dữ liệu",
+        "description": "Đã vận hành GA4 và chiến dịch nội dung; có thể hướng dẫn đọc funnel và UTM.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "huy",
+    "email": "seed-huy@dongdieu.local",
+    "name": "Huy",
+    "age": 25,
+    "city": "Hà Nội",
+    "occupation": "Lập trình viên",
+    "school": "ĐH Giao thông Vận tải",
+    "major": "Kỹ thuật phần mềm",
+    "bio": "Thích kỹ thuật phần mềm. Hợp với nhịp học đều mỗi ngày, giải thích lại để nhớ lâu trong môi trường trao đổi thoải mái.",
+    "intent": "serious",
+    "interests": [
+      "kỹ thuật phần mềm",
+      "học tập"
+    ],
+    "subjects": [
+      "JavaScript và review code",
+      "Tiếng Anh giao tiếp công việc"
+    ],
+    "learning_goals": [
+      "Hoàn thiện 3 pull request có test và trình bày demo kỹ thuật 5 phút bằng tiếng Anh trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 3,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "JavaScript và review code",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích được hỏi lại, tranh luận",
+      "Môi trường học": "Nói chuyện, trao đổi nhiều",
+      "Khi gặp khó": "Hỏi ngay"
+    },
+    "study_year": "Đã đi làm",
+    "needs_help_with": [
+      {
+        "topic": "JavaScript và review code",
+        "description": "Đọc tài liệu tốt; cần luyện diễn đạt tiến độ và giải thích quyết định kỹ thuật.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Hoàn thiện 3 pull request có test và trình bày demo kỹ thuật 5 phút bằng tiếng Anh trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Tiếng Anh giao tiếp công việc",
+        "description": "Có kinh nghiệm code review, Git và viết test; có thể pair debug frontend.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "tram",
+    "email": "seed-tram@dongdieu.local",
+    "name": "Trâm",
+    "age": 21,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH Kiến trúc",
+    "major": "Thiết kế nội thất",
+    "bio": "Thích thiết kế nội thất. Hợp với nhịp học đều mỗi ngày, nghe trước rồi ghi chú trong môi trường yên tĩnh.",
+    "intent": "serious",
+    "interests": [
+      "thiết kế nội thất",
+      "học tập"
+    ],
+    "subjects": [
+      "SketchUp và dựng phối cảnh",
+      "Tiếng Anh thuyết trình thiết kế"
+    ],
+    "learning_goals": [
+      "Hoàn thiện model phòng khách, 3 góc render và thuyết trình concept 5 phút trong 6 tuần."
+    ],
+    "available_times": [
+      {
+        "day_of_week": 4,
+        "start_time": "19:00",
+        "end_time": "21:00"
+      }
+    ],
+    "avatar_style": "three",
+    "simulated_interest": true,
+    "matching_goal": {
+      "topic": "SketchUp và dựng phối cảnh",
+      "duration_days": 42,
+      "deadline_level": "vua"
+    },
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [
+      {
+        "topic": "SketchUp và dựng phối cảnh",
+        "description": "Biết dựng model cơ bản; cần cải thiện ánh sáng, vật liệu và workflow render.",
+        "current_level": "Đang tự học và cần cùng thực hành theo bài tập cụ thể.",
+        "target_outcome": "Hoàn thiện model phòng khách, 3 góc render và thuyết trình concept 5 phút trong 6 tuần."
+      }
+    ],
+    "can_help_with": [
+      {
+        "topic": "Tiếng Anh thuyết trình thiết kế",
+        "description": "Có thể luyện nói tiếng Anh theo tình huống giới thiệu thiết kế và trả lời góp ý.",
+        "proficiency_level": "Có kinh nghiệm thực hành, phù hợp hỗ trợ nhập môn và góp ý bài tập.",
+        "max_sessions_per_week": 2
+      }
+    ]
+  },
+  {
+    "slug": "khoi_product",
+    "name": "Khôi",
+    "age": 22,
+    "city": "TP. Hồ Chí Minh",
+    "occupation": "Sinh viên",
+    "school": "ĐH Kinh tế",
+    "major": "Hệ thống thông tin quản lý",
+    "bio": "Đang thực hành xây lộ trình sản phẩm và muốn học thêm cách phân tích nghiệp vụ. Thích giải thích, học đều và trao đổi sau khi tự tìm hiểu.",
+    "intent": "serious",
+    "interests": ["Product", "phân tích nghiệp vụ"],
+    "subjects": ["Product", "Phân tích nghiệp vụ"],
+    "learning_goals": ["Muốn học Phân tích nghiệp vụ trong 4 tháng"],
+    "available_times": [
+      {"day_of_week": 2, "start_time": "19:00", "end_time": "21:00"},
+      {"day_of_week": 6, "start_time": "09:00", "end_time": "11:00"}
+    ],
+    "avatar_style": "one",
+    "simulated_interest": true,
+    "matching_goal": {"topic": "Phân tích nghiệp vụ", "duration_days": 120, "deadline_level": "dai"},
+    "learning_style": {
+      "Vai trò khi học": "Thích giải thích",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 4",
+    "needs_help_with": [{"topic": "Phân tích nghiệp vụ", "description": "Muốn luyện cách viết yêu cầu và mô hình hóa quy trình.", "current_level": "Đã làm bài tập nhóm cơ bản.", "target_outcome": "Viết được bộ yêu cầu cho một tính năng sản phẩm."}],
+    "can_help_with": [{"topic": "Product", "description": "Có thể cùng phân tích vấn đề người dùng và chia nhỏ một ý tưởng thành tính năng.", "proficiency_level": "Đã thực hành dự án học tập.", "max_sessions_per_week": 2}]
+  },
+  {
+    "slug": "yen_product",
+    "name": "Yến",
+    "age": 21,
+    "city": "Hà Nội",
+    "occupation": "Sinh viên",
+    "school": "ĐH Thương mại",
+    "major": "Thương mại điện tử",
+    "bio": "Muốn học Product qua dự án nhỏ, cùng theo dõi tiến độ và góp ý từng tuần. Thích nghe và giữ không gian tập trung.",
+    "intent": "serious",
+    "interests": ["Product", "nghiên cứu người dùng"],
+    "subjects": ["Product", "UX research"],
+    "learning_goals": ["Muốn học Product trong 5 tháng"],
+    "available_times": [
+      {"day_of_week": 3, "start_time": "19:00", "end_time": "21:00"},
+      {"day_of_week": 0, "start_time": "09:00", "end_time": "11:00"}
+    ],
+    "avatar_style": "two",
+    "simulated_interest": true,
+    "matching_goal": {"topic": "Product", "duration_days": 150, "deadline_level": "dai"},
+    "learning_style": {
+      "Vai trò khi học": "Thích nghe",
+      "Nhịp học": "Học đều mỗi ngày",
+      "Phong cách phản hồi": "Thích tự làm rồi mới hỏi",
+      "Môi trường học": "Im lặng, tập trung",
+      "Khi gặp khó": "Tự research trước"
+    },
+    "study_year": "Năm 3",
+    "needs_help_with": [{"topic": "Product", "description": "Muốn thử nghiên cứu người dùng và ưu tiên tính năng cho một dự án nhỏ.", "current_level": "Mới bắt đầu.", "target_outcome": "Hoàn thành một case study Product trong 5 tháng."}],
+    "can_help_with": [{"topic": "UX research", "description": "Có thể cùng chuẩn bị câu hỏi phỏng vấn và tổng hợp insight.", "proficiency_level": "Đã thực hành trong môn học.", "max_sessions_per_week": 2}]
+  }
+=======
+  {"slug":"lan","name":"Lan","age":20,"city":"Hà Nội","occupation":"Sinh viên","school":"ĐH Ngoại Ngữ","major":"Ngôn ngữ Anh","bio":"Đang chuẩn bị thi IELTS, thích nghe nhạc US-UK và xem phim không phụ đề.","intent":"conversation","interests":["âm nhạc","phim ảnh","học ngoại ngữ"],"subjects":["IELTS","Tiếng Anh"],"learning_goals":["Đạt IELTS 7.5 trong 3 tháng tới"],"available_times":[{"day_of_week":1,"start_time":"19:00","end_time":"21:00"},{"day_of_week":6,"start_time":"15:00","end_time":"17:00"}],"avatar_style":"one","simulated_interest":true},
+  {"slug":"hieu","name":"Hiếu","age":21,"city":"TP. Hồ Chí Minh","occupation":"Sinh viên","school":"ĐH Bách Khoa","major":"Khoa học Máy tính","bio":"Code bug nhiều quá nên cần người học cùng để có động lực fix bug.","intent":"serious","interests":["công nghệ","game","lập trình"],"subjects":["C++","Data Structures"],"learning_goals":["Hoàn thành đồ án môn Cấu trúc dữ liệu"],"available_times":[{"day_of_week":2,"start_time":"20:00","end_time":"22:00"},{"day_of_week":5,"start_time":"20:00","end_time":"22:00"}],"avatar_style":"two","simulated_interest":false},
+  {"slug":"nhung","name":"Nhung","age":22,"city":"Đà Nẵng","occupation":"Sinh viên năm cuối","school":"ĐH Kinh tế","major":"Marketing","bio":"Sắp ra trường, đang tự học thêm về Digital Marketing và Data Analysis.","intent":"activity","interests":["marketing","data","cà phê"],"subjects":["Data Analysis","Digital Marketing"],"learning_goals":["Lấy chứng chỉ Google Data Analytics"],"available_times":[{"day_of_week":6,"start_time":"09:00","end_time":"11:00"}],"avatar_style":"three","simulated_interest":true},
+  {"slug":"kien","name":"Kiên","age":24,"city":"Hà Nội","occupation":"Người đi làm","school":"ĐH Kiến trúc","major":"Thiết kế nội thất","bio":"Muốn học thêm về phần mềm 3D và tiếng Anh giao tiếp.","intent":"conversation","interests":["kiến trúc","3D","du lịch"],"subjects":["3ds Max","Tiếng Anh giao tiếp"],"learning_goals":["Giao tiếp cơ bản với khách hàng nước ngoài"],"available_times":[{"day_of_week":0,"start_time":"20:00","end_time":"21:30"},{"day_of_week":3,"start_time":"20:00","end_time":"21:30"}],"avatar_style":"one","simulated_interest":true},
+  {"slug":"linh_nguyen","name":"Linh Nguyễn","age":19,"city":"Cần Thơ","occupation":"Sinh viên","school":"ĐH Cần Thơ","major":"Luật kinh tế","bio":"Đọc luật buồn ngủ quá nên tìm bạn học cùng giờ hành chính.","intent":"friends","interests":["đọc sách","âm nhạc","cây cảnh"],"subjects":["Luật dân sự","Pháp luật đại cương"],"learning_goals":["Qua môn Pháp luật đại cương với điểm A"],"available_times":[{"day_of_week":1,"start_time":"14:00","end_time":"16:00"},{"day_of_week":4,"start_time":"14:00","end_time":"16:00"}],"avatar_style":"two","simulated_interest":false},
+  {"slug":"hoang","name":"Hoàng","age":25,"city":"TP. Hồ Chí Minh","occupation":"Lập trình viên","school":"ĐH Khoa học Tự nhiên","major":"Công nghệ phần mềm","bio":"Đi làm rồi nhưng vẫn muốn trau dồi thêm tiếng Nhật để onsite.","intent":"serious","interests":["lập trình","anime","tiếng Nhật"],"subjects":["JLPT N3"],"learning_goals":["Thi đậu JLPT N3 vào tháng 12"],"available_times":[{"day_of_week":6,"start_time":"19:00","end_time":"22:00"}],"avatar_style":"three","simulated_interest":true},
+  {"slug":"thu_ha","name":"Thu Hà","age":20,"city":"Hà Nội","occupation":"Sinh viên","school":"Học viện Tài chính","major":"Kế toán","bio":"Thích những buổi học yên tĩnh. Sợ môn nguyên lý kế toán.","intent":"serious","interests":["làm bánh","yoga","tài chính"],"subjects":["Nguyên lý kế toán","Tiếng Anh"],"learning_goals":["Không rớt môn Nguyên lý kế toán"],"available_times":[{"day_of_week":5,"start_time":"19:30","end_time":"21:30"}],"avatar_style":"one","simulated_interest":false},
+  {"slug":"duc_minh","name":"Đức Minh","age":21,"city":"Đà Nẵng","occupation":"Sinh viên","school":"ĐH Bách Khoa","major":"Điện tử Viễn thông","bio":"Đang cày cuốc học Machine Learning, cần mentor hoặc người học chung.","intent":"activity","interests":["AI","thể thao","công nghệ"],"subjects":["Machine Learning","Python"],"learning_goals":["Làm xong project nhận diện khuôn mặt"],"available_times":[{"day_of_week":2,"start_time":"20:00","end_time":"23:00"}],"avatar_style":"two","simulated_interest":true},
+  {"slug":"trang","name":"Trang","age":23,"city":"Hà Nội","occupation":"Freelancer","school":"ĐH Mỹ thuật Công nghiệp","major":"Thiết kế đồ họa","bio":"Cú đêm chính hiệu. Thường làm việc và học vào tối muộn.","intent":"conversation","interests":["vẽ","nghệ thuật","game indie"],"subjects":["UI/UX Design"],"learning_goals":["Hoàn thiện portfolio cá nhân"],"available_times":[{"day_of_week":0,"start_time":"22:00","end_time":"01:00"}],"avatar_style":"three","simulated_interest":true},
+  {"slug":"phuc","name":"Phúc","age":22,"city":"TP. Hồ Chí Minh","occupation":"Sinh viên năm cuối","school":"ĐH Y Dược","major":"Y đa khoa","bio":"Học y vất vả, cần người call học cùng để không ngủ gục.","intent":"serious","interests":["y học","đọc sách","chạy bộ"],"subjects":["Nội khoa","Ngoại khoa"],"learning_goals":["Ôn thi tốt nghiệp bác sĩ đa khoa"],"available_times":[{"day_of_week":6,"start_time":"08:00","end_time":"12:00"}],"avatar_style":"one","simulated_interest":false},
+  {"slug":"bich_ngoc","name":"Bích Ngọc","age":20,"city":"Hải Phòng","occupation":"Sinh viên","school":"ĐH Hàng Hải","major":"Logistics","bio":"Muốn cải thiện kỹ năng thuyết trình và học thêm tiếng Trung.","intent":"friends","interests":["du lịch","phim truyền hình","ngoại ngữ"],"subjects":["Tiếng Trung HSK 3"],"learning_goals":["Giao tiếp cơ bản tiếng Trung"],"available_times":[{"day_of_week":3,"start_time":"19:00","end_time":"21:00"}],"avatar_style":"two","simulated_interest":true},
+  {"slug":"tuan_anh","name":"Tuấn Anh","age":26,"city":"Hà Nội","occupation":"Kỹ sư","school":"ĐH Giao thông Vận tải","major":"Kỹ thuật cơ khí","bio":"Đang học MBA vào buổi tối, rất cần người giữ lửa học tập.","intent":"serious","interests":["ô tô","kinh tế","thể thao"],"subjects":["Quản trị chiến lược","MBA"],"learning_goals":["Đọc xong 2 cuốn sách về quản trị trong tháng"],"available_times":[{"day_of_week":1,"start_time":"20:30","end_time":"22:30"}],"avatar_style":"three","simulated_interest":false},
+  {"slug":"mai_phuong","name":"Mai Phương","age":19,"city":"TP. Hồ Chí Minh","occupation":"Sinh viên","school":"ĐH KHXH&NV","major":"Tâm lý học","bio":"Năng nổ, hay nói. Thích phân tích tâm lý nhân vật trong phim.","intent":"conversation","interests":["tâm lý học","phim ảnh","viết lách"],"subjects":["Tâm lý học hành vi"],"learning_goals":["Viết tiểu luận môn Tâm lý học"],"available_times":[{"day_of_week":4,"start_time":"14:00","end_time":"17:00"}],"avatar_style":"one","simulated_interest":true},
+  {"slug":"hai_dang","name":"Hải Đăng","age":21,"city":"Đà Nẵng","occupation":"Sinh viên","school":"ĐH Kinh tế","major":"Quản trị kinh doanh","bio":"Tập trung học để khởi nghiệp. Thường hay đọc sách về startup.","intent":"activity","interests":["startup","kinh doanh","cà phê"],"subjects":["Kế toán quản trị","Tài chính doanh nghiệp"],"learning_goals":["Hoàn thiện bản kế hoạch kinh doanh"],"available_times":[{"day_of_week":0,"start_time":"19:00","end_time":"22:00"}],"avatar_style":"two","simulated_interest":false},
+  {"slug":"quynh_nhu","name":"Quỳnh Như","age":24,"city":"Cần Thơ","occupation":"Giáo viên","school":"ĐH Sư phạm","major":"Sư phạm Toán","bio":"Đang học thêm về phương pháp giảng dạy mới và tiếng Anh.","intent":"serious","interests":["giảng dạy","toán học","du lịch"],"subjects":["Tiếng Anh giao tiếp","IELTS"],"learning_goals":["Luyện nói tiếng Anh trôi chảy hơn"],"available_times":[{"day_of_week":5,"start_time":"20:00","end_time":"21:30"}],"avatar_style":"three","simulated_interest":true},
+  {"slug":"minh_tri","name":"Minh Trí","age":20,"city":"Hà Nội","occupation":"Sinh viên","school":"ĐH Công nghệ","major":"Kỹ thuật máy tính","bio":"Cày deadline thâu đêm. Bạn nào thức khuya học thì ghép với mình.","intent":"friends","interests":["hardware","game","công nghệ"],"subjects":["Lập trình C","Vi xử lý"],"learning_goals":["Pass môn Vi xử lý"],"available_times":[{"day_of_week":2,"start_time":"23:00","end_time":"02:00"}],"avatar_style":"one","simulated_interest":true},
+  {"slug":"bao_tram","name":"Bảo Trâm","age":22,"city":"TP. Hồ Chí Minh","occupation":"Sinh viên năm cuối","school":"ĐH Hoa Sen","major":"Quản trị Du lịch","bio":"Chuyên gia đi lạc nhưng thích du lịch. Đang tự học tiếng Tây Ban Nha.","intent":"conversation","interests":["du lịch","văn hóa","ngoại ngữ"],"subjects":["Tiếng Tây Ban Nha"],"learning_goals":["Có thể nói tiếng Tây Ban Nha khi đi du lịch"],"available_times":[{"day_of_week":6,"start_time":"15:00","end_time":"17:00"}],"avatar_style":"two","simulated_interest":false},
+  {"slug":"quang_huy","name":"Quang Huy","age":25,"city":"Đà Nẵng","occupation":"Chuyên viên Marketing","school":"ĐH Kinh tế","major":"Thương mại điện tử","bio":"Làm việc remote, cần người tạo áp lực học tập và làm việc.","intent":"serious","interests":["marketing","SEO","chạy bộ"],"subjects":["SEO","Content Writing"],"learning_goals":["Lên top 1 từ khóa dự án cá nhân"],"available_times":[{"day_of_week":1,"start_time":"09:00","end_time":"11:00"}],"avatar_style":"three","simulated_interest":true},
+  {"slug":"thuy_tien","name":"Thủy Tiên","age":21,"city":"Hà Nội","occupation":"Sinh viên","school":"Học viện Báo chí","major":"Truyền thông đa phương tiện","bio":"Thích sáng tạo nội dung, dạo này đang học dựng video Premiere.","intent":"activity","interests":["quay phim","nhiếp ảnh","mạng xã hội"],"subjects":["Adobe Premiere","After Effects"],"learning_goals":["Edit xong video vlog đầu tiên"],"available_times":[{"day_of_week":3,"start_time":"20:00","end_time":"22:00"}],"avatar_style":"one","simulated_interest":true},
+  {"slug":"viet_hoang","name":"Việt Hoàng","age":23,"city":"Hải Phòng","occupation":"Nhân viên văn phòng","school":"ĐH Hàng Hải","major":"Kinh tế biển","bio":"Muốn học thêm Excel nâng cao và PowerBI để phục vụ công việc.","intent":"serious","interests":["data","thể thao","phân tích"],"subjects":["PowerBI","Excel"],"learning_goals":["Làm được dashboard báo cáo tự động"],"available_times":[{"day_of_week":2,"start_time":"19:30","end_time":"21:00"}],"avatar_style":"two","simulated_interest":false},
+  {"slug":"ngoc_mai","name":"Ngọc Mai","age":20,"city":"TP. Hồ Chí Minh","occupation":"Sinh viên","school":"ĐH Kiến trúc","major":"Thiết kế thời trang","bio":"Cần người ngồi vẽ chung để có cảm hứng.","intent":"friends","interests":["thời trang","nghệ thuật","âm nhạc"],"subjects":["Ký họa","Lịch sử thời trang"],"learning_goals":["Hoàn thành bộ sưu tập đồ án môn"],"available_times":[{"day_of_week":6,"start_time":"14:00","end_time":"18:00"}],"avatar_style":"three","simulated_interest":true},
+  {"slug":"dinh_khoi","name":"Đình Khôi","age":22,"city":"Cần Thơ","occupation":"Sinh viên","school":"ĐH Y Dược Cần Thơ","major":"Dược học","bio":"Đang ôn thi chứng chỉ tiếng Anh và học Dược lý.","intent":"serious","interests":["hóa học","đọc sách","cầu lông"],"subjects":["Dược lý học","TOEIC"],"learning_goals":["Đạt TOEIC 800"],"available_times":[{"day_of_week":0,"start_time":"20:00","end_time":"22:30"}],"avatar_style":"one","simulated_interest":false},
+  {"slug":"ha_phuong","name":"Hà Phương","age":19,"city":"Hà Nội","occupation":"Sinh viên","school":"ĐH Thương mại","major":"Kế toán","bio":"Thích không gian yên tĩnh. Cần tìm bạn học chung trên thư viện ảo.","intent":"activity","interests":["sách truyện","nghe podcast","làm bánh"],"subjects":["Toán cao cấp","Tiếng Anh"],"learning_goals":["Học thuộc công thức toán"],"available_times":[{"day_of_week":4,"start_time":"19:00","end_time":"21:00"}],"avatar_style":"two","simulated_interest":true},
+  {"slug":"quoc_bao","name":"Quốc Bảo","age":24,"city":"Đà Nẵng","occupation":"Designer","school":"ĐH Duy Tân","major":"Thiết kế đồ họa","bio":"Đang luyện vẽ Anatomy. Rất hoan nghênh các bạn có cùng sở thích.","intent":"conversation","interests":["vẽ","anime","concept art"],"subjects":["Anatomy Drawing"],"learning_goals":["Vẽ đúng tỉ lệ cơ thể người"],"available_times":[{"day_of_week":5,"start_time":"21:00","end_time":"23:00"}],"avatar_style":"three","simulated_interest":false},
+  {"slug":"gia_han","name":"Gia Hân","age":21,"city":"TP. Hồ Chí Minh","occupation":"Sinh viên","school":"ĐH Sư phạm Kỹ thuật","major":"Thiết kế nội thất","bio":"Đang làm đồ án 3D mệt mỏi, cần người ngồi cày chung.","intent":"friends","interests":["3D rendering","nội thất","cà phê"],"subjects":["Đồ án nội thất"],"learning_goals":["Render xong phối cảnh phòng khách"],"available_times":[{"day_of_week":6,"start_time":"09:00","end_time":"12:00"}],"avatar_style":"one","simulated_interest":true},
+  {"slug":"minh_quan","name":"Minh Quân","age":23,"city":"Hà Nội","occupation":"Thực tập sinh","school":"HV Công nghệ Bưu chính Viễn thông","major":"An toàn thông tin","bio":"Đam mê Cyber Security, hay thức khuya chơi CTF.","intent":"serious","interests":["bảo mật","CTF","game"],"subjects":["Network Security","CEH"],"learning_goals":["Lấy chứng chỉ CEH"],"available_times":[{"day_of_week":0,"start_time":"23:00","end_time":"01:00"}],"avatar_style":"two","simulated_interest":true},
+  {"slug":"tuyet_nhi","name":"Tuyết Nhi","age":20,"city":"Đà Lạt","occupation":"Sinh viên","school":"ĐH Đà Lạt","major":"Sinh học","bio":"Không gian mát mẻ, thích ngồi học cạnh cửa sổ.","intent":"activity","interests":["thiên nhiên","nghiên cứu","nghe nhạc acoustc"],"subjects":["Vi sinh vật học","Tiếng Anh"],"learning_goals":["Đọc hiểu tài liệu tiếng Anh chuyên ngành"],"available_times":[{"day_of_week":3,"start_time":"15:00","end_time":"17:00"}],"avatar_style":"three","simulated_interest":false},
+  {"slug":"van_long","name":"Văn Long","age":27,"city":"TP. Hồ Chí Minh","occupation":"Kinh doanh tự do","school":"ĐH Mở","major":"Quản trị kinh doanh","bio":"Bận rộn nhưng cố gắng dành 1 tiếng mỗi ngày học tiếng Trung.","intent":"conversation","interests":["kinh doanh","đầu tư","ngôn ngữ"],"subjects":["Tiếng Trung giao tiếp"],"learning_goals":["Có thể nói chuyện phiếm bằng tiếng Trung"],"available_times":[{"day_of_week":1,"start_time":"06:00","end_time":"07:00"}],"avatar_style":"one","simulated_interest":true},
+  {"slug":"ngoc_han","name":"Ngọc Hân","age":22,"city":"Hà Nội","occupation":"Sinh viên năm cuối","school":"Học viện Ngân hàng","major":"Tài chính ngân hàng","bio":"Đang ôn thi CFA bậc 1, cực kỳ áp lực.","intent":"serious","interests":["tài chính","cà phê","yoga"],"subjects":["CFA Level 1"],"learning_goals":["Đỗ CFA Level 1"],"available_times":[{"day_of_week":6,"start_time":"19:00","end_time":"22:00"}],"avatar_style":"two","simulated_interest":true},
+  {"slug":"quang_vinh","name":"Quang Vinh","age":21,"city":"Hải Phòng","occupation":"Sinh viên","school":"ĐH Hàng Hải","major":"Kỹ thuật tàu biển","bio":"Học các môn kỹ thuật nặng nề, cần người chia sẻ kinh nghiệm học tập.","intent":"friends","interests":["kỹ thuật","thể thao","đọc sách"],"subjects":["Cơ học lý thuyết","Toán kỹ thuật"],"learning_goals":["Qua môn Cơ học lý thuyết"],"available_times":[{"day_of_week":2,"start_time":"19:00","end_time":"21:00"}],"avatar_style":"three","simulated_interest":false}
+>>>>>>> 29066618049be865e9daa585fed068c149bc780f
+]

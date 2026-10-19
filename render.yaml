@@ -1,0 +1,85 @@
+# Render Blueprint: backend FastAPI (backend/app), gói Free.
+<<<<<<< HEAD
+# Gói Free không có ổ đĩa bền. Điền đủ 5 biến LITESTREAM_* để bật sao lưu
+# SQLite lên Supabase Storage; file avatar và ảnh chat cần cơ chế lưu riêng.
+=======
+# Gói Free không có ổ đĩa bền: database (gồm cả ảnh check-in) được Litestream sao lưu liên tục lên Supabase Storage
+# và tự khôi phục khi server khởi động lại. Điền 5 biến LITESTREAM_* (sync: false) trên Render để bật.
+>>>>>>> 29066618049be865e9daa585fed068c149bc780f
+# Tạo trên Render: New > Blueprint > chọn repo này. Biến có "sync: false" sẽ được hỏi khi tạo.
+services:
+  - type: web
+    name: peerbridge-api
+    runtime: python
+    plan: free
+    region: singapore
+    branch: feat/ai-vision
+    rootDir: backend
+    buildCommand: pip install -r requirements-deploy.txt && bash install_litestream.sh
+    startCommand: bash start.sh
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: APP_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false
+<<<<<<< HEAD
+      - key: PUBLIC_WEB_URL
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: "2525"
+      - key: SMTP_USERNAME
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM_EMAIL
+        sync: false
+=======
+>>>>>>> 29066618049be865e9daa585fed068c149bc780f
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: VISION_LLM_PROVIDER
+        value: openai
+      - key: LLM_PROVIDER
+        value: openai
+<<<<<<< HEAD
+      - key: RETRIEVER_PROVIDER
+        value: fake
+=======
+      # RAG: tìm trong slide giảng viên ở backend/data/courses/aicb bằng BM25, không cần Qdrant.
+      - key: RETRIEVER_PROVIDER
+        value: local
+      - key: RAG_DEFAULT_COURSE_ID
+        value: aicb
+>>>>>>> 29066618049be865e9daa585fed068c149bc780f
+      # Vòng AI: Plan dùng danh mục chuẩn Data 1, AI chia việc + AI viết lời nhắc coach, AI xếp hạng ghép cặp.
+      - key: PLAN_LLM_PROVIDER
+        value: openai_compatible
+      - key: PLAN_CATALOG_PATH
+        value: data/concepts/plan_catalog.json
+      - key: PLAN_COACH_V2_ENABLED
+        value: "true"
+      - key: MATCH_RERANK_ENABLED
+        value: "true"
+      - key: LOOP_INTERVAL_MINUTES
+        value: "60"
+      - key: VISION_DAILY_BUDGET_USD
+        value: "2"
+      - key: DATABASE_PATH
+        value: ./data/peerbridge.db
+      - key: LITESTREAM_BUCKET
+        sync: false
+      - key: LITESTREAM_ENDPOINT
+        sync: false
+      - key: LITESTREAM_REGION
+        sync: false
+      - key: LITESTREAM_ACCESS_KEY_ID
+        sync: false
+      - key: LITESTREAM_SECRET_ACCESS_KEY
+        sync: false

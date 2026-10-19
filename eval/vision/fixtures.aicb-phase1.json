@@ -1,0 +1,80 @@
+{
+  "learner_name": "Học viên AICB Phase 1",
+  "concepts": [
+    {
+      "id": "ai.llm_foundation",
+      "name": "Nền tảng AI và LLM",
+      "description": "Nội dung bài slide \"Nền tảng AI và LLM\" của khóa AICB."
+    },
+    {
+      "id": "ai.business_problem",
+      "name": "Bài toán kinh doanh cho AI",
+      "description": "Nội dung bài slide \"Xác định bài toán kinh doanh cho AI\" của khóa AICB."
+    },
+    {
+      "id": "ai.react_agent",
+      "name": "Agent và ReAct",
+      "description": "Nội dung bài slide \"Từ Chatbot đến Agent - ReAct\" của khóa AICB."
+    },
+    {
+      "id": "ai.prompt_tool_calling",
+      "name": "Prompt Engineering và Tool Calling",
+      "description": "Nội dung bài slide \"Prompt Engineering và Tool Calling\" của khóa AICB."
+    },
+    {
+      "id": "ai.harness",
+      "name": "Context, Loop và Harness",
+      "description": "Nội dung bài slide \"Context, Loop và Harness Engineering\" của khóa AICB."
+    },
+    {
+      "id": "ai.product_thinking",
+      "name": "Tư duy sản phẩm AI và PRD",
+      "description": "Nội dung bài slide \"Tư duy sản phẩm AI và yêu cầu (PRD)\" của khóa AICB."
+    },
+    {
+      "id": "ai.product_management",
+      "name": "Quản lý sản phẩm và dự án AI",
+      "description": "Nội dung bài slide \"Quản lý sản phẩm và dự án AI\" của khóa AICB."
+    },
+    {
+      "id": "ai.data_foundations",
+      "name": "Embedding, Chunking và Vector Store",
+      "description": "Nội dung bài slide \"Nền tảng dữ liệu - Embedding, Chunking, Vector Store\" của khóa AICB."
+    },
+    {
+      "id": "ai.rag_pipeline",
+      "name": "RAG Pipeline",
+      "description": "Nội dung bài slide \"RAG Pipeline - Truy xuất và sinh câu trả lời\" của khóa AICB."
+    },
+    {
+      "id": "ai.multi_agent",
+      "name": "Multi-Agent, MCP và LangGraph",
+      "description": "Nội dung bài slide \"Multi-Agent - MCP, A2A và LangGraph\" của khóa AICB."
+    },
+    {
+      "id": "ai.data_pipeline",
+      "name": "Data Pipeline và Observability",
+      "description": "Nội dung bài slide \"Data Pipeline và Data Observability\" của khóa AICB."
+    },
+    {
+      "id": "ai.guardrails",
+      "name": "Guardrails, HITL và Responsible AI",
+      "description": "Nội dung bài slide \"Guardrails, HITL và Responsible AI\" của khóa AICB."
+    },
+    {
+      "id": "ai.deployment",
+      "name": "Triển khai Agent lên Cloud",
+      "description": "Nội dung bài slide \"Triển khai Agent lên Cloud\" của khóa AICB."
+    },
+    {
+      "id": "ai.monitoring",
+      "name": "Monitoring, Logging và Observability",
+      "description": "Nội dung bài slide \"Monitoring, Logging và Observability\" của khóa AICB."
+    },
+    {
+      "id": "ai.evaluation",
+      "name": "Đánh giá và Benchmark AI",
+      "description": "Nội dung bài slide \"Đánh giá và Benchmark AI\" của khóa AICB."
+    }
+  ]
+}
